@@ -1,39 +1,58 @@
 import React from 'react';
 
 function StandOut() {
-  const features = [
+  const capabilities = [
     {
       icon: '✅',
       title: 'Quality Control',
-      text: 'We follow robust quality systems are guided and validated pursuant to, inter alia, ISO 9001:2015, AS 9100:2016 and AS 13100 quality management systems with regular functioning, monitoring and continuous improvements in accordance per these standards.'
+      category: 'Process',
+      description: 'Complete precision machined solutions with ultra-precision and advanced manufacturing systems for all metal cutting and welding operations.'
     },
     {
       icon: '🚚',
-      title: 'Distribution And Logistics',
-      text: 'Our commitment to delivering the goods on-time and at the right location stems out of our efficient logistics systems. We\'ve developed a strong logistics network comprising of logistics partners under our own procedures and policies.'
+      title: 'Distribution & Logistics',
+      category: 'Operations',
+      description: 'Strong partnerships and distributor networks for oil and gas chemicals, hydraulic systems, and comprehensive supply chain logistics.'
     },
     {
       icon: '⚙️',
       title: 'Supply Chain',
-      text: 'Our supply chain is well integrated into ISO 9001:2015 and AS 9100:2016 management systems with regular functioning, monitoring and continuous improvements in accordance with these standards.'
+      category: 'Management',
+      description: 'Deep partnerships with key OEMs offering end-to-end supply chain management services and strategic venture collaborations.'
     },
     {
-      icon: '📢',
+      icon: '📈',
       title: 'Sales & Marketing',
-      text: 'Our sales, business development and marketing teams serve as integral pillars within our growth function. Our professionals are dedicated to nurturing enduring, robust connections with the leadership teams of our valued clients.'
+      category: 'Business',
+      description: 'Direct marketing to unique industries through advanced selling platforms providing relevant and advantageous client services.'
     }
   ];
 
   return (
     <section className="stand-out-section">
       <div className="stand-out-container">
-        <h2 className="stand-out-title">HOW DO WE STAND OUT</h2>
+        <div className="stand-out-header">
+          <div className="section-tag">WHY CHOOSE US</div>
+          <h2 className="stand-out-title">How We Stand Out</h2>
+          <p className="stand-out-subtitle">
+            Our comprehensive capabilities and industry certifications ensure exceptional quality and
+            reliability in every project we undertake.
+          </p>
+        </div>
+        
+        <h3 className="capabilities-subtitle">Core Capabilities</h3>
+        
         <div className="stand-out-grid">
-          {features.map((feature, index) => (
-            <div key={index} className="stand-out-card hover-3d">
-              <div className="stand-out-card-icon">{feature.icon}</div>
-              <h3 className="stand-out-card-title">{feature.title}</h3>
-              <p className="stand-out-card-text">{feature.text}</p>
+          {capabilities.map((capability, index) => (
+            <div key={index} className="capability-card hover-3d">
+              <div className="capability-header">
+                <div className="capability-icon">{capability.icon}</div>
+                <div className="capability-info">
+                  <h4 className="capability-title">{capability.title}</h4>
+                  <span className="capability-category">{capability.category}</span>
+                </div>
+              </div>
+              <p className="capability-description">{capability.description}</p>
             </div>
           ))}
         </div>

@@ -1,24 +1,38 @@
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import IconButtons from './components/IconButtons';
-import WhatWeDo from './components/WhatWeDo';
-import StandOut from './components/StandOut';
-import Clients from './components/Clients';
+import Home from './components/Home';
+import About from './components/About';
+import Capabilities from './components/Capabilities';
 import Footer from './components/Footer';
+import { ThemeProvider } from './contexts/ThemeContext';
 import './utils/scrollAnimations.js';
 import './App.css';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('home');
+
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'about':
+        return <About />;
+      case 'capabilities':
+        return <Capabilities />;
+      case 'home':
+      default:
+        return <Home />;
+    }
+  };
+
   return (
-    <div className="App">
-      <Navbar />
-      <HeroSection />
-      <IconButtons />
-      <WhatWeDo />
-      <StandOut />
-      <Clients />
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+        <main className="main-content">
+          {renderPage()}
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
