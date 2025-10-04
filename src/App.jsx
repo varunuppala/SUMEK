@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Capabilities from './components/Capabilities';
+import Products from './components/Products';
 import Footer from './components/Footer';
 import { ThemeProvider } from './contexts/ThemeContext';
 import './utils/scrollAnimations.js';
@@ -22,6 +23,8 @@ function App() {
         return <About />;
       case 'capabilities':
         return <Capabilities />;
+      case 'products':
+        return <Products />;
       case 'home':
       default:
         return <Home />;
