@@ -4,112 +4,106 @@ function Capabilities() {
   const productManagementProcess = [
     {
       step: 1,
-      title: 'Concept',
-      description: 'Initial project planning and requirements gathering',
+      title: 'Digital Design',
+      description: 'Research & Development with advanced digital tools',
       items: [
-        'Customer requirements analysis',
-        'Technical feasibility study',
-        'Project scope definition',
-        'Resource planning'
+        '3D Modelling',
+        '3D Scanning',
+        '3D Printing',
+        'Prototype development',
+        'Material R&D',
+        'Machining R&D'
       ]
     },
     {
       step: 2,
-      title: 'Design',
-      description: 'Engineering design and development phase',
+      title: 'Component Production',
+      description: 'Critical components produced using precision techniques',
       items: [
-        '3D CAD modeling',
-        'Structural analysis',
-        'Material selection',
-        'Design optimization'
+        'Programmers',
+        'Operators',
+        'Assembly optimization',
+        'Fitters & Welders',
+        'Fixture and tool development',
+        'Maintenance'
       ]
     },
     {
       step: 3,
-      title: 'Development',
-      description: 'Prototype development and testing',
+      title: 'Integrated Assembly',
+      description: 'Assemble components with strict quality checks',
       items: [
-        'Prototype manufacturing',
-        'Performance testing',
-        'Design validation',
-        'Process refinement'
+        'Component assembly',
+        'Performance tests',
+        'Quality validation',
+        'Safety and durability checks',
+        'Compliance verification'
       ]
     },
     {
       step: 4,
-      title: 'Verification',
-      description: 'Quality assurance and compliance verification',
+      title: 'Quality Control & Assurance',
+      description: 'Comprehensive quality assurance processes',
       items: [
-        'Quality control checks',
-        'Compliance verification',
-        'Safety assessments'
-      ]
-    },
-    {
-      step: 5,
-      title: 'Pre-production',
-      description: 'Pre-production setup and testing',
-      items: [
-        'Manufacturing setup',
-        'Process validation',
-        'Supply chain preparation'
-      ]
-    },
-    {
-      step: 6,
-      title: 'Marketing Support',
-      description: 'Technical marketing and customer support',
-      items: [
-        'Technical documentation',
-        'Training materials',
-        'Customer support setup'
+        'Validation',
+        'IPQC (In-Process Quality Control)',
+        'FIA (First Inspection Article)',
+        'CMM (Coordinate Measuring Machine)',
+        'ISO 9001:2015',
+        'AS9100 (in progress)'
       ]
     }
   ];
 
   const manufacturingCapabilities = [
     {
-      title: 'Design Engineering',
+      title: 'Advanced Machining',
       items: [
-        '3D CAD Design (SolidWorks, AutoCAD)',
-        'Finite Element Analysis (FEA)',
-        'Computational Fluid Dynamics (CFD)',
-        'Design for Manufacturing (DFM)',
-        'Reverse Engineering',
-        'Technical Documentation'
+        '5-axis VMC (Vertical Machining Center)',
+        'UMC (Universal Machining Center)',
+        'HMC (Horizontal Machining Center)',
+        'EDM (Electrical Discharge Machining)',
+        '4 & 5-axis CNC',
+        'Lathe'
       ]
     },
     {
-      title: 'Manufacturing Processes',
+      title: 'Materials & Composites',
       items: [
-        'CNC Machining (3, 4, 5-axis)',
-        'Precision Grinding',
-        'Sheet Metal Fabrication',
-        'Welding & Joining',
+        'C-SIC (Carbon-Silicon Carbide)',
+        'FRP (Fiber Reinforced Polymer)',
+        'Silica',
+        'Graphite',
+        'Titanium',
+        'Chromium',
+        'Nemonic',
+        'Armour Steel',
+        'Multiple Alloys',
+        'Magnesium Alloy Castings'
+      ]
+    },
+    {
+      title: 'Processes',
+      items: [
+        'NDT (Non-Destructive Testing)',
         'Heat Treatment',
-        'Surface Finishing'
+        'Assembly & Integration',
+        'High Temperature Furnaces',
+        'Precision Machining',
+        'Carbonization',
+        'Siliconization',
+        'Graphitization'
       ]
     },
     {
-      title: 'Quality Assurance',
+      title: 'Certifications & Standards',
       items: [
-        'ISO 9001:2015 Certified',
-        'AS9100 Aerospace Standard',
-        'Non-Destructive Testing (NDT)',
-        'Dimensional Inspection',
-        'Material Testing',
-        'Certification & Documentation'
-      ]
-    },
-    {
-      title: 'Industries Served',
-      items: [
-        'Defence & Military',
-        'Aerospace',
-        'Oil & Gas',
-        'Energy & Power',
-        'Marine & Offshore',
-        'Industrial Equipment'
+        'ISO 9001:2015',
+        'AS9100 (in progress)',
+        'IEC',
+        'UDYAM',
+        '100% Radiography Welding',
+        'Quality Management System'
       ]
     }
   ];
@@ -177,9 +171,9 @@ function Capabilities() {
       {/* Product Management Process */}
       <section className="product-management-section">
         <div className="product-management-container">
-          <h2 className="section-title">Product Management Process</h2>
+          <h2 className="section-title">Core Processes</h2>
           <p className="section-description">
-            Our structured approach ensures successful project delivery from initial concept to final product
+            Designing, Machining, and Assembling with Precision - from digital design to integrated assembly
           </p>
           
           <div className="process-grid">
@@ -206,9 +200,9 @@ function Capabilities() {
       {/* Manufacturing Capabilities */}
       <section className="manufacturing-capabilities-section">
         <div className="manufacturing-capabilities-container">
-          <h2 className="section-title">Manufacturing Capabilities</h2>
+          <h2 className="section-title">Advanced Production</h2>
           <p className="section-description">
-            Comprehensive manufacturing solutions with advanced equipment and processes
+            Revolutionizing Precision and Accuracy with state-of-the-art machining, materials, and processes
           </p>
           
           <div className="capabilities-grid">

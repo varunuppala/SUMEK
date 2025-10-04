@@ -3,20 +3,20 @@ import React from 'react';
 function StatsSection() {
   const stats = [
     {
-      number: '25+',
+      number: '26+',
       label: 'Years Experience'
     },
     {
-      number: '500+',
-      label: 'Projects Delivered'
+      number: 'ISO 9001',
+      label: 'Certified'
     },
     {
-      number: '50+',
-      label: 'Global Clients'
+      number: 'Make in India',
+      label: 'Proud Partner'
     },
     {
-      number: '4',
-      label: 'Key Sectors'
+      number: '2',
+      label: 'Core Sectors'
     }
   ];
 

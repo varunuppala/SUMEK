@@ -39,28 +39,28 @@ function Contact() {
               <div className="info-icon">📍</div>
               <div className="info-content">
                 <h4>Our Location</h4>
-                <p>Industrial Park, Sector 5<br />Hyderabad, Telangana 500032</p>
+                <p>Plot 13, TSIIC Hardware Park 2<br />Shamshabad, Telangana 500005</p>
               </div>
             </div>
             <div className="info-item">
               <div className="info-icon">📞</div>
               <div className="info-content">
                 <h4>Phone Number</h4>
-                <p>+91 9876543210<br />+91 8765432109</p>
+                <p>+91 9949946507</p>
               </div>
             </div>
             <div className="info-item">
               <div className="info-icon">✉️</div>
               <div className="info-content">
                 <h4>Email Address</h4>
-                <p>info@sumek.com<br />sales@sumek.com</p>
+                <p>info@sumek.in</p>
               </div>
             </div>
             <div className="info-item">
-              <div className="info-icon">🕒</div>
+              <div className="info-icon">🌐</div>
               <div className="info-content">
-                <h4>Business Hours</h4>
-                <p>Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday: 9:00 AM - 2:00 PM</p>
+                <h4>Website</h4>
+                <p>www.sumek.in</p>
               </div>
             </div>
           </div>

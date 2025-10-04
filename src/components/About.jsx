@@ -1,111 +1,74 @@
 import React from 'react';
 
+// Feature flags - set to false to hide features
+const FEATURE_FLAGS = {
+  showJoinTeam: false,
+};
+
 function About() {
   const stats = [
-    { number: '1999', label: 'Founded' },
-    { number: '150+', label: 'Team Members' },
-    { number: '4', label: 'Global Offices' },
-    { number: '500+', label: 'Successful Projects' }
+    { number: '1998', label: 'Founded' },
+    { number: '26+', label: 'Years of Excellence' },
+    { number: 'ISO 9001', label: 'Certified' },
+    { number: 'Hyderabad', label: 'Based in India' }
   ];
 
   const timeline = [
     {
-      year: '1999',
-      title: 'Company Founded',
-      description: 'S & U MEK Engineers was established with a vision to deliver precision engineering solutions to critical industries.',
+      year: '1998',
+      title: 'Precision Machining Unit',
+      description: 'S&U MEK Engineers was founded by Umamaheswara Rao Abburi with a clear focus on precision machining for aerospace and defense, beginning with specialized job-work assignments.',
       icon: '🏢'
     },
     {
-      year: '2003',
-      title: 'First Major Defense Contract',
-      description: 'Secured our first major defense contract, establishing our reputation in the defense sector with innovative solutions.',
-      icon: '🛡️'
-    },
-    {
-      year: '2007',
-      title: 'Aerospace Division Launch',
-      description: 'Expanded into aerospace engineering, developing specialized capabilities for aircraft and satellite systems.',
-      icon: '✈️'
-    },
-    {
-      year: '2010',
-      title: 'ISO Certifications Achieved',
-      description: 'Obtained ISO 9001:2015 and AS9100D certifications, demonstrating our commitment to quality and industry standards.',
+      year: '2008',
+      title: 'Best Vendor for Precision Engineering',
+      description: 'As capabilities expanded, we moved into mass-production machining and quickly became a trusted name for executing complex and challenging projects with absolute reliability.',
       icon: '🏆'
     },
     {
-      year: '2014',
-      title: 'Global Expansion',
-      description: 'Opened international offices in Europe and North America, establishing our global presence and capabilities.',
-      icon: '🌍'
-    },
-    {
-      year: '2018',
-      title: 'Energy Sector Entry',
-      description: 'Entered the renewable energy sector, developing solutions for solar, wind, and hydroelectric power systems.',
-      icon: '⚡'
-    },
-    {
       year: '2020',
-      title: 'Team Growth Milestone',
-      description: 'Reached 150+ team members across four countries, representing our commitment to talent and expertise.',
-      icon: '👥'
+      title: 'Expanded into Composite Material Machining',
+      description: 'Scaled up operations and expanded capabilities to machine advanced composite materials including C-SIC, FRP, and graphite for aerospace applications.',
+      icon: '⚙️'
     },
     {
       year: '2024',
-      title: 'Innovation Hub Launch',
-      description: 'Launched our state-of-the-art innovation hub, focusing on next-generation engineering technologies and R&D.',
+      title: 'One-Stop Product Solution',
+      description: 'Advanced into manufacturing carbon composite materials in-house, machining with next-generation processes, and delivering complete solutions from raw material to finished product.',
+      icon: '🚀'
+    },
+    {
+      year: 'Future',
+      title: 'Indigenous Product Manufacturer',
+      description: 'Expanding into carbon composite manufacturing with carbonization, siliconization, and graphitization processes for aerospace, defense, drone, UAV, and industrial applications.',
       icon: '🔬'
     }
   ];
 
   const teamMembers = [
     {
-      name: 'Dr. Sarah Mitchell',
-      role: 'Chief Executive Officer',
-      location: 'London, UK',
-      description: 'With over 20 years in precision engineering, Dr. Mitchell leads our strategic vision and global operations.',
-      expertise: ['Strategic Leadership', 'Engineering Management', 'Global Operations'],
+      name: 'Umamaheswara Rao Abburi',
+      role: 'Founder',
+      location: 'Hyderabad, India',
+      description: 'Founded S&U MEK Engineers in 1998 with a vision to manufacture high-precision engineering components for aerospace and defense. A young experienced technocrat who built the company from the ground up.',
+      expertise: ['Visionary Leadership', 'Precision Engineering', 'Aerospace & Defense'],
       image: null
     },
     {
-      name: 'James Richardson',
-      role: 'Chief Technology Officer',
-      location: 'Manchester, UK',
-      description: 'James drives our technological innovation and oversees our advanced engineering capabilities across all sectors.',
-      expertise: ['Technology Innovation', 'R&D Management', 'Advanced Manufacturing'],
+      name: 'Yeshwanth Kumar Abburi',
+      role: 'Director of Business Management',
+      location: 'Hyderabad, India',
+      description: 'Leads business strategy and management, ensuring customer satisfaction and driving continuous learning and adaptation to the latest technologies.',
+      expertise: ['Business Management', 'Customer Relations', 'Strategic Planning'],
       image: null
     },
     {
-      name: 'Dr. Priya Sharma',
-      role: 'Head of Aerospace Division',
-      location: 'Birmingham, UK',
-      description: 'A leading expert in aerospace engineering with extensive experience in aircraft and satellite systems.',
-      expertise: ['Aerospace Engineering', 'Satellite Systems', 'Aircraft Design'],
-      image: null
-    },
-    {
-      name: 'Michael Chen',
-      role: 'Head of Defense Solutions',
-      location: 'London, UK',
-      description: 'Michael specializes in defense engineering solutions and leads our most critical defense sector projects.',
-      expertise: ['Defense Systems', 'Security Engineering', 'Project Management'],
-      image: null
-    },
-    {
-      name: 'Emma Thompson',
+      name: 'Karthik Abburi',
       role: 'Director of Operations',
-      location: 'Leeds, UK',
-      description: 'Emma ensures operational excellence across all our projects and manages our global supply chain.',
-      expertise: ['Operations Management', 'Supply Chain', 'Quality Control'],
-      image: null
-    },
-    {
-      name: 'Dr. Robert Wilson',
-      role: 'Head of Energy Division',
-      location: 'Glasgow, UK',
-      description: 'Dr. Wilson leads our renewable energy initiatives and sustainable engineering solutions.',
-      expertise: ['Renewable Energy', 'Sustainable Engineering', 'Power Systems'],
+      location: 'Hyderabad, India',
+      description: 'Oversees all operational aspects including production, lean manufacturing, quality control, and ensures operational excellence across all projects.',
+      expertise: ['Operations Management', 'Lean Manufacturing', 'Quality Assurance'],
       image: null
     }
   ];
@@ -122,9 +85,9 @@ function About() {
               <span className="text-blue">S & U MEK</span>
             </h1>
             <p className="about-hero-description">
-              For over 25 years, S & U MEK Engineers has been at the forefront of precision
-              engineering, delivering innovative solutions that power the world's most critical
-              industries.
+              For over 26 years, S & U MEK Engineers has been at the forefront of precision
+              engineering for aerospace and defense, delivering innovative solutions from machining 
+              to complete product manufacturing - proudly Make in India.
             </p>
             <div className="about-hero-cta">
               <span className="cta-text">OUR STORY</span>
@@ -141,34 +104,34 @@ function About() {
             <div className="section-tag">ABOUT US</div>
             <h2 className="story-title">
               Engineering Excellence<br />
-              Since 1999
+              Since 1998
             </h2>
             <div className="story-text">
               <p>
-                S & U MEK Engineers began as a vision to bridge the gap between
-                innovative engineering concepts and practical, real-world applications.
-                Founded in 1999, we have grown from a small team of passionate
-                engineers to become a globally recognized leader in precision
-                engineering solutions.
+                S & U MEK Engineers Pvt. Ltd. was founded in 1998 by Umamaheswara Rao Abburi, 
+                a young experienced technocrat, to manufacture high-precision engineering components. 
+                Over the past three decades, we have successfully carved out a niche market by 
+                tackling projects that demand critical attention and complexity.
               </p>
               <p>
-                Our expertise spans across critical industries including Defense,
-                Aerospace, Oil & Gas, and Energy sectors. We specialize in delivering
-                complex engineering projects that require the highest levels of
-                precision, reliability, and innovation.
+                At SUMEK, our managerial and skilled engineers collaborate seamlessly to deliver 
+                exceptional results, prioritizing customer satisfaction above all else. We are 
+                committed to continuous learning and adapting to the latest technologies, which 
+                distinguishes us in the industry.
               </p>
               <p>
-                Today, with offices across four countries and a team of over 150 skilled
-                professionals, we continue to push the boundaries of what's possible in
-                engineering, always with our clients' success at the heart of everything
-                we do.
+                As a family-run organization based in Hyderabad, we take pride in our legacy of 
+                manufacturing precision engineering components in India. Today, we are advancing 
+                into a new chapter - manufacturing advanced carbon composite materials in-house, 
+                machining them with next-generation processes, and delivering them as complete 
+                solutions for the aerospace and defense sector.
               </p>
             </div>
           </div>
           <div className="story-image">
             <div className="image-placeholder">
               <div className="stats-overlay">
-                <span className="stat-number">25+</span>
+                <span className="stat-number">26+</span>
                 <span className="stat-label">Years of Excellence</span>
               </div>
             </div>
@@ -201,9 +164,9 @@ function About() {
           
           <div className="mission-quote">
             <blockquote>
-              "We believe that exceptional engineering is not just about
-              technical excellence—it's about creating solutions that
-              make a meaningful difference in the world."
+              "Aerospace and defense manufacturing continues to evolve, blending precision 
+              and innovation. Thank you for joining us. For more insights, contact our team. 
+              Together, let's shape the future."
             </blockquote>
             <cite>— S & U MEK Leadership Team</cite>
           </div>
@@ -211,9 +174,10 @@ function About() {
           <div className="vision-card">
             <h3>Our Vision</h3>
             <p>
-              To be recognized globally as the premier engineering partner, known for our
-              unwavering commitment to excellence, innovation, and the positive impact we
-              create for our clients and communities worldwide.
+              To become a complete indigenous product manufacturer, delivering one-stop solutions 
+              from raw material to finished product in carbon composite manufacturing for aerospace, 
+              defense, drone, UAV, and industrial applications - contributing to India's Make in 
+              India initiative.
             </p>
           </div>
         </div>
@@ -225,8 +189,9 @@ function About() {
           <div className="section-tag">OUR JOURNEY</div>
           <h2 className="timeline-title">OUR TIMELINE</h2>
           <p className="timeline-description">
-            Over 25 years of continuous growth, innovation, and excellence. Discover the key
-            milestones that have shaped S & U MEK Engineers into the industry leader we are today.
+            Over 26 years of continuous growth, innovation, and excellence. From precision machining 
+            to one-stop product solutions - discover the key milestones that have shaped S & U MEK 
+            Engineers into the industry leader we are today.
           </p>
           
           <div className="timeline">
@@ -250,7 +215,7 @@ function About() {
               future.
             </p>
             <div className="timeline-cta">
-              📅 The journey continues...
+               The journey continues...
             </div>
           </div>
         </div>
@@ -295,14 +260,16 @@ function About() {
             ))}
           </div>
 
-          <div className="join-team-cta">
-            <h3>Join Our Team</h3>
-            <p>
-              We're always looking for exceptional talent to join our growing team.
-              Discover exciting career opportunities in precision engineering.
-            </p>
-            <button className="cta-button">View Open Positions</button>
-          </div>
+          {FEATURE_FLAGS.showJoinTeam && (
+            <div className="join-team-cta">
+              <h3>Join Our Team</h3>
+              <p>
+                We're always looking for exceptional talent to join our growing team.
+                Discover exciting career opportunities in precision engineering.
+              </p>
+              <button className="cta-button">View Open Positions</button>
+            </div>
+          )}
         </div>
       </section>
     </div>

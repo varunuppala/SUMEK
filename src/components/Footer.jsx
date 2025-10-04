@@ -11,9 +11,9 @@ function Footer() {
               <span className="footer-company-name">MEK Engineers</span>
             </div>
             <p className="footer-description">
-              Delivering precision engineering solutions in the most
-              demanding sectors across the world. Your trusted partner
-              for defense, aerospace, oil & gas, and energy projects.
+              Delivering precision engineering and complete product solutions 
+              for aerospace and defense sectors. From machining to carbon 
+              composite manufacturing - proudly Make in India.
             </p>
             <div className="footer-social">
               <a href="#" className="social-link" aria-label="LinkedIn">
@@ -44,18 +44,22 @@ function Footer() {
             <div className="contact-item">
               <span className="contact-icon">📍</span>
               <div className="contact-details">
-                <p>123 Engineering Boulevard</p>
-                <p>Tech District, City 12345</p>
-                <p>United Kingdom</p>
+                <p>Plot 13, TSIIC Hardware Park 2</p>
+                <p>Shamshabad, Telangana 500005</p>
+                <p>India</p>
               </div>
             </div>
             <div className="contact-item">
               <span className="contact-icon">📞</span>
-              <a href="tel:+441234567889" className="contact-link">+44 123 456 789</a>
+              <a href="tel:+919949946507" className="contact-link">+91 9949946507</a>
             </div>
             <div className="contact-item">
               <span className="contact-icon">✉️</span>
-              <a href="mailto:info@sumekengineers.com" className="contact-link">info@sumekengineers.com</a>
+              <a href="mailto:info@sumek.in" className="contact-link">info@sumek.in</a>
+            </div>
+            <div className="contact-item">
+              <span className="contact-icon">🌐</span>
+              <a href="https://www.sumek.in" className="contact-link">www.sumek.in</a>
             </div>
           </div>
         </div>

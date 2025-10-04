@@ -6,24 +6,24 @@ function WhatWeDo() {
   const services = [
     {
       id: 'defence',
-      icon: '🛡️',
+      icon: '🛡️⭐',
       title: 'DEFENCE',
       description: 'Advanced defense solutions',
       link: 'Learn more →',
       modalTitle: 'DEFENCE',
       modalSubtitle: 'Advanced defense solutions',
-      modalDescription: 'We specialize in cutting-edge defense technologies and precision manufacturing for military applications, ensuring the highest standards of security and reliability in mission-critical environments.',
+      modalDescription: 'We specialize in cutting-edge defense technologies and precision manufacturing for military applications, ensuring the highest standards of security and reliability in mission-critical environments. Trusted partner to DRDO, ASL, NSIL, RCI, BEML, and other defense organizations.',
       keyCapabilities: [
-        'Precision machining',
-        'Secure supply chain',
-        'Materials testing',
-        'Quality assurance'
+        'Precision machining for defense components',
+        'Carbon composite manufacturing (C-SIC, FRP)',
+        'Advanced materials: Titanium, Chromium, Nemonic, Armour Steel',
+        'ISO 9001:2015 & AS9100 (in progress)'
       ],
       applications: [
-        'Aircraft components',
-        'Naval systems',
-        'Ground vehicles',
-        'Communication systems'
+        'Nozzle Assembly',
+        'Turbine Blades',
+        'Forged Aircraft Parts',
+        'Defense System Components'
       ],
       backgroundImage: '/api/placeholder/800/400'
     },
@@ -35,64 +35,19 @@ function WhatWeDo() {
       link: 'Learn more →',
       modalTitle: 'AEROSPACE',
       modalSubtitle: 'Aerospace engineering excellence',
-      modalDescription: 'Leading aerospace engineering solutions with focus on innovation, safety, and reliability for commercial and military aviation sectors worldwide.',
+      modalDescription: 'Leading aerospace engineering solutions from precision machining to complete product manufacturing. Partnering with ISRO, HAL, BHEL, and other aerospace organizations to deliver components for aircraft, satellites, and UAV systems with unmatched quality and reliability.',
       keyCapabilities: [
-        'Turbine manufacturing',
-        'Flight-critical systems',
-        'Composite materials',
-        'AS9100D certified'
+        '5-axis VMC, UMC, HMC, EDM, 4 & 5-axis CNC, Lathe',
+        'Carbon composite materials manufacturing',
+        '3D modeling, scanning, and printing',
+        'NDT, heat treatment, precision machining'
       ],
       applications: [
-        'Aircraft engines',
-        'Satellite components',
-        'UAV systems',
-        'Space equipment'
-      ],
-      backgroundImage: '/api/placeholder/800/400'
-    },
-    {
-      id: 'oil-gas',
-      icon: '🛢️',
-      title: 'OIL & GAS',
-      description: 'Energy sector expertise',
-      link: 'Learn more →',
-      modalTitle: 'OIL & GAS',
-      modalSubtitle: 'Energy sector expertise',
-      modalDescription: 'Comprehensive oil and gas solutions from upstream exploration to downstream processing with emphasis on safety, efficiency, and environmental compliance.',
-      keyCapabilities: [
-        'High-pressure components',
-        'API certified processes',
-        'Corrosion-resistant materials',
-        'Environmental compliance'
-      ],
-      applications: [
-        'Drilling equipment',
-        'Pipeline systems',
-        'Refinery components',
-        'Offshore platforms'
-      ],
-      backgroundImage: '/api/placeholder/800/400'
-    },
-    {
-      id: 'energy',
-      icon: '⚡',
-      title: 'ENERGY',
-      description: 'Sustainable energy solutions',
-      link: 'Learn more →',
-      modalTitle: 'ENERGY',
-      modalSubtitle: 'Sustainable energy solutions',
-      modalDescription: 'Pioneering sustainable energy technologies including renewable energy systems and energy storage solutions for a cleaner, more efficient future.',
-      keyCapabilities: [
-        'Wind turbine components',
-        'Energy storage solutions',
-        'Solar mounting systems',
-        'Grid integration'
-      ],
-      applications: [
-        'Wind farms',
-        'Solar installations',
-        'Hydroelectric systems',
-        'Battery storage'
+        'Air Intake Caps & Assembly',
+        'Turbine Pump Impellers',
+        'Outboard Panels C-SIC',
+        'Satellite Components',
+        'UAV & Drone Parts'
       ],
       backgroundImage: '/api/placeholder/800/400'
     }
@@ -113,8 +68,8 @@ function WhatWeDo() {
           <div className="section-tag">OUR SERVICES</div>
           <h2 className="what-we-do-title">What We Do</h2>
           <p className="what-we-do-subtitle">
-            At S & U MEK we deliver precision engineering solutions in the most demanding sectors
-            across the world.
+            At S & U MEK we deliver precision engineering and complete product solutions for 
+            aerospace and defense sectors - from raw material to finished product.
           </p>
         </div>
         <div className="what-we-do-grid">

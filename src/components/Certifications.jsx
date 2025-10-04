@@ -10,21 +10,21 @@ function Certifications() {
     },
     {
       icon: '✈️',
-      title: 'AS9100D',
+      title: 'AS9100',
       category: 'Aerospace',
-      description: 'Aerospace quality management certification ensuring highest standards in aerospace manufacturing and supply chain management.'
+      description: 'Aerospace quality management certification in progress, ensuring highest standards in aerospace manufacturing and supply chain management.'
     },
     {
-      icon: '🛢️',
-      title: 'API Q1',
-      category: 'Energy',
-      description: 'Oil and gas industry quality management certification meeting stringent requirements for petroleum and natural gas operations.'
+      icon: '⚡',
+      title: 'IEC',
+      category: 'Standards',
+      description: 'International Electrotechnical Commission standards compliance for electrical and electronic technologies used in manufacturing.'
     },
     {
-      icon: '🛡️',
-      title: 'ISO 45001',
-      category: 'Safety',
-      description: 'Occupational Health and Safety Management Systems certification prioritizing worker safety and workplace protection standards.'
+      icon: '🇮🇳',
+      title: 'UDYAM',
+      category: 'MSME',
+      description: 'Government of India MSME registration supporting Make in India initiative and promoting indigenous manufacturing capabilities.'
     }
   ];
 

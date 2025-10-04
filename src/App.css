@@ -451,11 +451,12 @@
 }
 
 .what-we-do-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .service-card {
@@ -466,6 +467,8 @@
   text-align: center;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
+  flex: 0 1 350px;
+  max-width: 400px;
 }
 
 .service-card {
@@ -973,37 +976,47 @@
 }
 
 .clients-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
 
-.client-logo {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
+.client-logo-wrapper {
+  background: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
-  cursor: pointer;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s ease;
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: var(--text-secondary);
-  text-align: center;
   backdrop-filter: blur(10px);
+  min-height: 100px;
+  cursor: pointer;
 }
 
-.client-logo:hover {
-  background: rgba(255, 255, 255, 0.2);
+.client-logo-wrapper:hover {
+  background: rgba(255, 255, 255, 1);
   border-color: #4A9EFF;
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(74, 158, 255, 0.3);
+}
+
+.client-logo-image {
+  max-width: 100%;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.client-logo-wrapper:hover .client-logo-image {
+  filter: grayscale(0%);
 }
 
 .trust-stats {
@@ -1034,6 +1047,7 @@
 
 @media (max-width: 768px) {
   .clients-logos {
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
   
@@ -1042,10 +1056,19 @@
     gap: 2rem;
   }
   
-  .client-logo {
-    width: 80px;
-    height: 80px;
-    font-size: 1.2rem;
+  .client-logo-wrapper {
+    min-height: 80px;
+    padding: 1rem;
+  }
+  
+  .client-logo-image {
+    max-height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-logos {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1545,7 +1568,7 @@
 /* Timeline Section */
 .about-timeline {
   background: var(--bg-tertiary);
-  padding: 100px 0;
+  padding: 60px 0 100px;
 }
 
 .about-timeline-container {
@@ -1673,7 +1696,7 @@
 /* Team Section */
 .about-team {
   background: var(--bg-tertiary);
-  padding: 100px 0;
+  padding: 60px 0 100px;
 }
 
 .about-team-container {
@@ -1900,7 +1923,7 @@
 /* Capabilities Hero Section */
 .capabilities-hero {
   background: var(--bg-tertiary);
-  padding: 100px 0 80px;
+  padding: 100px 0 40px;
   text-align: center;
 }
 
@@ -1930,7 +1953,7 @@
 /* Product Management Section */
 .product-management-section {
   background: var(--bg-tertiary);
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .product-management-container {
@@ -1957,46 +1980,73 @@
 
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin-bottom: 2rem;
+  max-width: 900px;
+  margin: 0 auto 2rem;
 }
 
 .process-card {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  padding: 2rem;
+  padding: 1.75rem;
   text-align: left;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.process-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4A9EFF, #22C55E);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .process-card:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
   border-color: #4A9EFF;
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(74, 158, 255, 0.2);
+}
+
+.process-card:hover::before {
+  opacity: 1;
 }
 
 .process-header {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .process-number {
-  background: #4A9EFF;
+  background: linear-gradient(135deg, #4A9EFF, #357ABD);
   color: white;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(74, 158, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.process-card:hover .process-number {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(74, 158, 255, 0.5);
 }
 
 .process-info {
@@ -2004,16 +2054,21 @@
 }
 
 .process-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
   color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.process-card:hover .process-title {
+  color: #4A9EFF;
 }
 
 .process-description {
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   color: rgba(255, 255, 255, 0.7);
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .process-items {
@@ -2025,14 +2080,21 @@
 .process-items li {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   line-height: 1.4;
+  padding-left: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.process-items li:hover {
+  color: rgba(255, 255, 255, 1);
+  padding-left: 1rem;
 }
 
 /* Manufacturing Capabilities Section */
 .manufacturing-capabilities-section {
   background: var(--bg-tertiary);
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .manufacturing-capabilities-container {
@@ -2087,7 +2149,7 @@
 /* Equipment Section */
 .equipment-section {
   background: var(--bg-tertiary);
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .equipment-container {
@@ -2152,7 +2214,7 @@
 /* Process Flow Section */
 .process-flow-section {
   background: var(--bg-tertiary);
-  padding: 100px 0;
+  padding: 60px 0 80px;
 }
 
 .process-flow-container {
@@ -2232,14 +2294,26 @@
 }
 
 /* Responsive Design for Capabilities */
+@media (max-width: 992px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .capabilities-hero-title {
     font-size: 2.5rem;
   }
   
-  .process-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+  .process-card {
+    padding: 1.5rem;
+  }
+  
+  .process-number {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
   }
   
   .capabilities-grid {

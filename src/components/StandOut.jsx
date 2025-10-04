@@ -3,28 +3,28 @@ import React from 'react';
 function StandOut() {
   const capabilities = [
     {
-      icon: '✅',
-      title: 'Quality Control',
-      category: 'Process',
-      description: 'Complete precision machined solutions with ultra-precision and advanced manufacturing systems for all metal cutting and welding operations.'
+      icon: '👥',
+      title: 'Collaborative Teams',
+      category: 'People',
+      description: 'Managerial and skilled engineers collaborate seamlessly to deliver exceptional results, prioritizing customer satisfaction and continuous learning.'
     },
     {
-      icon: '🚚',
-      title: 'Distribution & Logistics',
-      category: 'Operations',
-      description: 'Strong partnerships and distributor networks for oil and gas chemicals, hydraulic systems, and comprehensive supply chain logistics.'
+      icon: '💡',
+      title: 'Visionary Leadership',
+      category: 'Leadership',
+      description: 'Family-run organization with visionary leadership driving innovation, precision engineering excellence, and strategic growth in aerospace and defense.'
     },
     {
-      icon: '⚙️',
-      title: 'Supply Chain',
-      category: 'Management',
-      description: 'Deep partnerships with key OEMs offering end-to-end supply chain management services and strategic venture collaborations.'
+      icon: '📚',
+      title: 'Digital Upskilling',
+      category: 'Technology',
+      description: 'Committed to continuous learning and adapting to latest technologies - from 3D modeling to advanced carbon composite manufacturing processes.'
     },
     {
-      icon: '📈',
-      title: 'Sales & Marketing',
-      category: 'Business',
-      description: 'Direct marketing to unique industries through advanced selling platforms providing relevant and advantageous client services.'
+      icon: '🛡️',
+      title: 'Improved Safety & Training',
+      category: 'Quality',
+      description: 'Rigorous safety standards, comprehensive training programs, and ISO 9001:2015 certification ensuring highest quality and reliability.'
     }
   ];
 
