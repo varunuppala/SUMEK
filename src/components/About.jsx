@@ -1,4 +1,5 @@
 import React from 'react';
+import { Building2, Award, Settings, Rocket, Microscope, MapPin, Mail } from 'lucide-react';
 
 // Feature flags - set to false to hide features
 const FEATURE_FLAGS = {
@@ -18,31 +19,31 @@ function About() {
       year: '1998',
       title: 'Precision Machining Unit',
       description: 'S&U MEK Engineers was founded by Umamaheswara Rao Abburi with a clear focus on precision machining for aerospace and defense, beginning with specialized job-work assignments.',
-      icon: '🏢'
+      icon: <Building2 size={28} strokeWidth={1.5} />
     },
     {
       year: '2008',
       title: 'Best Vendor for Precision Engineering',
       description: 'As capabilities expanded, we moved into mass-production machining and quickly became a trusted name for executing complex and challenging projects with absolute reliability.',
-      icon: '🏆'
+      icon: <Award size={28} strokeWidth={1.5} />
     },
     {
       year: '2020',
       title: 'Expanded into Composite Material Machining',
       description: 'Scaled up operations and expanded capabilities to machine advanced composite materials including C-SIC, FRP, and graphite for aerospace applications.',
-      icon: '⚙️'
+      icon: <Settings size={28} strokeWidth={1.5} />
     },
     {
       year: '2024',
       title: 'One-Stop Product Solution',
       description: 'Advanced into manufacturing carbon composite materials in-house, machining with next-generation processes, and delivering complete solutions from raw material to finished product.',
-      icon: '🚀'
+      icon: <Rocket size={28} strokeWidth={1.5} />
     },
     {
       year: 'Future',
       title: 'Indigenous Product Manufacturer',
       description: 'Expanding into carbon composite manufacturing with carbonization, siliconization, and graphitization processes for aerospace, defense, drone, UAV, and industrial applications.',
-      icon: '🔬'
+      icon: <Microscope size={28} strokeWidth={1.5} />
     }
   ];
 
@@ -238,13 +239,18 @@ function About() {
                   {member.image ? (
                     <img src={member.image} alt={member.name} />
                   ) : (
-                    <div className="image-placeholder">👤</div>
+                    <div className="image-placeholder">
+                      <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                    </div>
                   )}
                 </div>
                 <div className="team-member-info">
                   <h3 className="member-name">{member.name}</h3>
                   <p className="member-role">{member.role}</p>
-                  <p className="member-location">📍 {member.location}</p>
+                  <p className="member-location"><MapPin size={14} strokeWidth={2} style={{ display: 'inline', marginRight: '0.25rem' }} /> {member.location}</p>
                   <p className="member-description">{member.description}</p>
                   <div className="member-expertise">
                     {member.expertise.map((skill, skillIndex) => (
@@ -252,7 +258,7 @@ function About() {
                     ))}
                   </div>
                   <div className="member-contact">
-                    <button className="contact-btn">✉️</button>
+                    <button className="contact-btn"><Mail size={16} strokeWidth={2} /></button>
                     <button className="linkedin-btn">in</button>
                   </div>
                 </div>

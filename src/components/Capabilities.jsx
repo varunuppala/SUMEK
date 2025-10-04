@@ -1,4 +1,5 @@
 import React from 'react';
+import { Flame, FlaskConical, Cog, Wrench, Settings, Factory, CheckCircle, Package, Target } from 'lucide-react';
 
 function Capabilities() {
   const productManagementProcess = [
@@ -50,7 +51,7 @@ function Capabilities() {
         'FIA (First Inspection Article)',
         'CMM (Coordinate Measuring Machine)',
         'ISO 9001:2015',
-        'AS9100 (in progress)'
+        '100% Radiography'
       ]
     }
   ];
@@ -99,56 +100,77 @@ function Capabilities() {
       title: 'Certifications & Standards',
       items: [
         'ISO 9001:2015',
-        'AS9100 (in progress)',
         'IEC',
         'UDYAM',
         '100% Radiography Welding',
-        'Quality Management System'
+        'Quality Management System',
+        'DRDO/HAL/BDL Approved'
       ]
     }
   ];
 
-  const equipmentCategories = [
+  const compositeManufacturing = [
     {
-      title: 'Machining Equipment',
-      icon: '⚙️',
-      expandable: true
+      title: 'Advanced Furnace Systems',
+      icon: <Flame size={32} strokeWidth={1.5} />,
+      description: 'High-temperature furnaces for composite material processing',
+      items: [
+        'Carbonization Furnaces',
+        'Graphitization Furnaces',
+        'Siliconization Equipment',
+        'Heat Treatment Systems',
+        'Temperature Control Systems'
+      ]
     },
     {
-      title: 'Fabrication Equipment',
-      icon: '🔧',
-      expandable: true
+      title: 'Composite Processing',
+      icon: <FlaskConical size={32} strokeWidth={1.5} />,
+      description: 'Complete material transformation capabilities',
+      items: [
+        'Carbonization Process',
+        'Graphitization Process',
+        'Siliconization Process',
+        'C-SIC Material Development',
+        'Material Testing & Validation'
+      ]
     },
     {
-      title: 'Testing & Quality Equipment',
-      icon: '🔬',
-      expandable: true
+      title: 'Precision Machining',
+      icon: <Cog size={32} strokeWidth={1.5} />,
+      description: 'Raw material to final product machining',
+      items: [
+        '5-Axis CNC Machining',
+        'Composite Material Machining',
+        'Custom Specification Manufacturing',
+        'Final Product Finishing',
+        'Quality Inspection'
+      ]
     }
   ];
 
   const processFlow = [
     {
-      icon: '🔧',
+      icon: <Wrench size={24} strokeWidth={1.5} />,
       title: 'Material Receiving',
       description: 'Incoming material inspection and verification'
     },
     {
-      icon: '⚙️',
+      icon: <Settings size={24} strokeWidth={1.5} />,
       title: 'Quality Inspection',
       description: 'Initial quality checks and material testing'
     },
     {
-      icon: '🏭',
+      icon: <Factory size={24} strokeWidth={1.5} />,
       title: 'Manufacturing Process',
       description: 'Precision manufacturing and fabrication'
     },
     {
-      icon: '✅',
+      icon: <CheckCircle size={24} strokeWidth={1.5} />,
       title: 'Quality Assurance',
       description: 'Final quality control and testing'
     },
     {
-      icon: '📦',
+      icon: <Package size={24} strokeWidth={1.5} />,
       title: 'Final Delivery',
       description: 'Packaging and delivery to customer'
     }
@@ -220,24 +242,42 @@ function Capabilities() {
         </div>
       </section>
 
-      {/* Machine & Fabrication Equipment */}
+      {/* Composite Material Manufacturing */}
       <section className="equipment-section">
         <div className="equipment-container">
-          <h2 className="section-title">Machine & Fabrication Equipment</h2>
+          <h2 className="section-title">Composite Material Manufacturing & Machining</h2>
           <p className="section-description">
-            State-of-the-art machinery and equipment for precision manufacturing
+            One-stop solution for complete composite material lifecycle - from raw material manufacturing 
+            through carbonization, graphitization, and siliconization to final machined products
           </p>
           
-          <div className="equipment-list">
-            {equipmentCategories.map((category, index) => (
-              <div key={index} className="equipment-category">
-                <div className="equipment-header">
-                  <span className="equipment-icon">{category.icon}</span>
-                  <span className="equipment-title">{category.title}</span>
-                  {category.expandable && <span className="expand-arrow">›</span>}
+          <div className="composite-manufacturing-grid">
+            {compositeManufacturing.map((capability, index) => (
+              <div key={index} className="composite-card">
+                <div className="composite-header">
+                  <span className="composite-icon">{capability.icon}</span>
+                  <div>
+                    <h3 className="composite-title">{capability.title}</h3>
+                    <p className="composite-description">{capability.description}</p>
+                  </div>
                 </div>
+                <ul className="composite-items">
+                  {capability.items.map((item, itemIndex) => (
+                    <li key={itemIndex}>• {item}</li>
+                  ))}
+                </ul>
               </div>
             ))}
+          </div>
+          
+          <div className="composite-highlight">
+            <h3><Target size={24} strokeWidth={2} style={{ display: 'inline-block', marginRight: '0.5rem', verticalAlign: 'middle' }} /> Complete Material Solution</h3>
+            <p>
+              We provide an integrated approach to composite manufacturing - from material creation through 
+              advanced thermal processes (carbonization, graphitization, siliconization) to precision machining 
+              of raw materials into final products per customer specifications. This end-to-end capability makes 
+              us a unique one-stop solution in the aerospace and defense industry.
+            </p>
           </div>
         </div>
       </section>

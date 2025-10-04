@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Shield, Plane } from 'lucide-react';
 
 function WhatWeDo() {
   const [selectedService, setSelectedService] = useState(null);
@@ -6,7 +7,7 @@ function WhatWeDo() {
   const services = [
     {
       id: 'defence',
-      icon: '🛡️⭐',
+      icon: <Shield size={48} strokeWidth={1.5} />,
       title: 'DEFENCE',
       description: 'Advanced defense solutions',
       link: 'Learn more →',
@@ -29,7 +30,7 @@ function WhatWeDo() {
     },
     {
       id: 'aerospace',
-      icon: '✈️',
+      icon: <Plane size={48} strokeWidth={1.5} />,
       title: 'AEROSPACE',
       description: 'Aerospace engineering excellence',
       link: 'Learn more →',

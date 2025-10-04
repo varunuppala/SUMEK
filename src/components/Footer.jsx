@@ -1,4 +1,5 @@
 import React from 'react';
+import { Linkedin, Mail, MapPin, Phone, Globe } from 'lucide-react';
 
 function Footer() {
   return (
@@ -16,14 +17,14 @@ function Footer() {
               composite manufacturing - proudly Make in India.
             </p>
             <div className="footer-social">
-              <a href="#" className="social-link" aria-label="LinkedIn">
-                <span className="social-icon">in</span>
+              <a href="https://www.linkedin.com/company/sumek" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
+                <Linkedin size={20} strokeWidth={1.5} />
               </a>
-              <a href="#" className="social-link" aria-label="Twitter">
-                <span className="social-icon">𝕏</span>
+              <a href="mailto:info@sumek.in" className="social-link" aria-label="Email">
+                <Mail size={20} strokeWidth={1.5} />
               </a>
-              <a href="#" className="social-link" aria-label="Website">
-                <span className="social-icon">🌐</span>
+              <a href="https://www.sumek.in" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Website">
+                <Globe size={20} strokeWidth={1.5} />
               </a>
             </div>
           </div>
@@ -42,7 +43,7 @@ function Footer() {
           <div className="footer-section">
             <h4>Get In Touch</h4>
             <div className="contact-item">
-              <span className="contact-icon">📍</span>
+              <span className="contact-icon"><MapPin size={18} strokeWidth={1.5} /></span>
               <div className="contact-details">
                 <p>Plot 13, TSIIC Hardware Park 2</p>
                 <p>Shamshabad, Telangana 500005</p>
@@ -50,15 +51,15 @@ function Footer() {
               </div>
             </div>
             <div className="contact-item">
-              <span className="contact-icon">📞</span>
+              <span className="contact-icon"><Phone size={18} strokeWidth={1.5} /></span>
               <a href="tel:+919949946507" className="contact-link">+91 9949946507</a>
             </div>
             <div className="contact-item">
-              <span className="contact-icon">✉️</span>
+              <span className="contact-icon"><Mail size={18} strokeWidth={1.5} /></span>
               <a href="mailto:info@sumek.in" className="contact-link">info@sumek.in</a>
             </div>
             <div className="contact-item">
-              <span className="contact-icon">🌐</span>
+              <span className="contact-icon"><Globe size={18} strokeWidth={1.5} /></span>
               <a href="https://www.sumek.in" className="contact-link">www.sumek.in</a>
             </div>
           </div>

@@ -4,14 +4,17 @@ function HeroSection() {
   return (
     <section className="hero-section">
       <div className="hero-container">
-        <div className="hero-tagline">DRIVEN BY PRECISION. DEFINED BY INNOVATION</div>
+        <div className="hero-tagline">Driven by Precision. Defined by Innovation.</div>
         <h1 className="hero-title">
           <span className="hero-title-line-1">S & U MEK</span>
           <span className="hero-title-line-2">Engineers</span>
         </h1>
         <p className="hero-description">
+          Precision Engineering for Aerospace & Defence since 1998
+        </p>
+        <p className="hero-subdescription">
           From precision machining to advanced carbon composite manufacturing - delivering complete 
-          solutions for aerospace and defense sectors with unmatched quality, speed, and consistency.
+          solutions with unmatched quality, speed, and consistency.
         </p>
         <div className="hero-buttons">
           <button className="hero-btn hero-btn-primary">

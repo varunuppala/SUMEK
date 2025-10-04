@@ -1,25 +1,36 @@
 :root {
-  font-family: 'Roboto', 'Open Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Optima', 'Trajan Sans', 'Trajan Pro', 'Roboto', 'Open Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   font-weight: 400;
 
-  /* Light theme colors */
-  --header-blue: #1E90FF;
-  --dark-blue: #191970;
-  --light-blue: #87CEEB;
-  --light-blue-hover: #ADD8E6;
-  --client-blue: #000080;
+  /* Aerospace/Defense Color Palette - Optimized Readability */
+  --navy-blue: #132f4c;
+  --navy-accent: #1a4971;
+  --navy-light: #2c5282;
+  --navy-lighter: #3b6ea5;
+  --metallic-silver: #d1dae3;
+  --metallic-dark: #9ca3af;
+  --grey: #6c757d;
+  --grey-light: #f3f4f6;
   --white: #ffffff;
   --black: #000000;
+  --text-light: #f0f4f8;
+  --accent-blue: #5b9bd5;
 
   /* Theme-aware colors */
   --bg-primary: var(--white);
-  --bg-secondary: var(--light-blue);
-  --bg-tertiary: var(--dark-blue);
+  --bg-secondary: var(--grey-light);
+  --bg-tertiary: var(--navy-blue);
   --text-primary: var(--black);
-  --text-secondary: var(--white);
-  --border-color: #e0e0e0;
+  --text-secondary: var(--text-light);
+  --text-tertiary: var(--grey);
+  --accent-primary: var(--accent-blue);
+  --accent-secondary: var(--metallic-silver);
+  --border-color: #e5e7eb;
   --shadow-color: rgba(0, 0, 0, 0.1);
+
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -34,38 +45,35 @@
   --bg-tertiary: #f0f2f5;
   --text-primary: #1a1a1a;
   --text-secondary: #2c3e50;
-  --text-tertiary: #4a4a4a;
+  --text-tertiary: #6c757d;
+  --accent-primary: #1e3a5f;
+  --accent-secondary: #8b95a1;
   --border-color: #e0e0e0;
   --shadow-color: rgba(0, 0, 0, 0.1);
-  
-  /* Adjust existing colors for light mode */
-  --header-blue: #1E90FF;
-  --light-blue: #87CEEB;
-  --light-blue-hover: #4A9EFF;
-  --client-blue: #000080;
 }
 
 /* Dark theme colors */
 [data-theme="dark"] {
-  --bg-primary: #1a1a1a;
-  --bg-secondary: #2d2d2d;
-  --bg-tertiary: #0f0f0f;
+  --bg-primary: #132f4c;
+  --bg-secondary: #1a4971;
+  --bg-tertiary: #0d1b2a;
   --text-primary: #ffffff;
-  --text-secondary: #e0e0e0;
-  --border-color: #404040;
-  --shadow-color: rgba(255, 255, 255, 0.1);
-  
-  /* Adjust existing colors for dark mode */
-  --header-blue: #4A9EFF;
-  --light-blue: #5A8FBF;
-  --light-blue-hover: #7BA7D1;
-  --client-blue: #6B8FFF;
+  --text-secondary: #f0f4f8;
+  --text-tertiary: #d1dae3;
+  --accent-primary: #5b9bd5;
+  --accent-secondary: #d1dae3;
+  --border-color: #3b6ea5;
+  --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

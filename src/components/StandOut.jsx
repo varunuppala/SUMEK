@@ -1,30 +1,43 @@
 import React from 'react';
+import { Ruler, Cog, Wrench, FlaskConical, CheckCircle2, Truck } from 'lucide-react';
 
 function StandOut() {
   const capabilities = [
     {
-      icon: '👥',
-      title: 'Collaborative Teams',
-      category: 'People',
-      description: 'Managerial and skilled engineers collaborate seamlessly to deliver exceptional results, prioritizing customer satisfaction and continuous learning.'
+      icon: <Ruler size={32} strokeWidth={1.5} />,
+      title: 'Digital Design',
+      category: 'Engineering',
+      description: 'Advanced 3D modeling, CAD/CAM design, and digital prototyping for precision aerospace components.'
     },
     {
-      icon: '💡',
-      title: 'Visionary Leadership',
-      category: 'Leadership',
-      description: 'Family-run organization with visionary leadership driving innovation, precision engineering excellence, and strategic growth in aerospace and defense.'
+      icon: <Cog size={32} strokeWidth={1.5} />,
+      title: 'Component Production',
+      category: 'Manufacturing',
+      description: '5-axis CNC machining, precision turning, milling, and advanced manufacturing of critical components.'
     },
     {
-      icon: '📚',
-      title: 'Digital Upskilling',
-      category: 'Technology',
-      description: 'Committed to continuous learning and adapting to latest technologies - from 3D modeling to advanced carbon composite manufacturing processes.'
+      icon: <Wrench size={32} strokeWidth={1.5} />,
+      title: 'Integrated Assembly',
+      category: 'Integration',
+      description: 'Complete assembly solutions from individual components to full systems with rigorous testing.'
     },
     {
-      icon: '🛡️',
-      title: 'Improved Safety & Training',
-      category: 'Quality',
-      description: 'Rigorous safety standards, comprehensive training programs, and ISO 9001:2015 certification ensuring highest quality and reliability.'
+      icon: <FlaskConical size={32} strokeWidth={1.5} />,
+      title: 'Composite Manufacturing',
+      category: 'Advanced Materials',
+      description: 'Cutting-edge carbon composite manufacturing for lightweight, high-strength aerospace applications.'
+    },
+    {
+      icon: <CheckCircle2 size={32} strokeWidth={1.5} />,
+      title: 'Quality Control',
+      category: 'Quality Assurance',
+      description: 'ISO 9001:2015 certified processes with comprehensive inspection and testing protocols.'
+    },
+    {
+      icon: <Truck size={32} strokeWidth={1.5} />,
+      title: 'Supply Chain Management',
+      category: 'Logistics',
+      description: 'Efficient material sourcing, inventory management, and on-time delivery for critical projects.'
     }
   ];
 
@@ -35,8 +48,7 @@ function StandOut() {
           <div className="section-tag">WHY CHOOSE US</div>
           <h2 className="stand-out-title">How We Stand Out</h2>
           <p className="stand-out-subtitle">
-            Our comprehensive capabilities and industry certifications ensure exceptional quality and
-            reliability in every project we undertake.
+            End-to-end engineering capabilities from design to delivery, backed by decades of aerospace expertise.
           </p>
         </div>
         

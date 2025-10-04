@@ -4,6 +4,9 @@ import Home from './components/Home';
 import About from './components/About';
 import Capabilities from './components/Capabilities';
 import Products from './components/Products';
+import Expansion from './components/Expansion';
+import Career from './components/Career';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { ThemeProvider } from './contexts/ThemeContext';
 import './utils/scrollAnimations.js';
@@ -25,6 +28,12 @@ function App() {
         return <Capabilities />;
       case 'products':
         return <Products />;
+      case 'expansion':
+        return <Expansion />;
+      case 'career':
+        return <Career />;
+      case 'contact':
+        return <Contact />;
       case 'home':
       default:
         return <Home />;
