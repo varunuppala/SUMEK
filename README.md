@@ -63,6 +63,17 @@ npm run preview
 
 The development server runs on `http://localhost:5173/SUMEK/` (or next available port)
 
+## 📧 Contact Form Email Setup
+
+The contact form sends emails to **`karthik.gannaman@gmail.com`** using EmailJS.
+
+**Quick Setup (7 minutes):**
+1. See `QUICK_START.md` for step-by-step instructions
+2. Get free EmailJS account at https://www.emailjs.com/
+3. Configure your credentials in `src/components/Contact.jsx`
+
+**Detailed Documentation:** See `EMAILJS_SETUP.md`
+
 ## 📁 Project Structure
 
 ```
