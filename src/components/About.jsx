@@ -1,11 +1,6 @@
 import React from 'react';
 import { Building2, Award, Settings, Rocket, Microscope, MapPin, Mail } from 'lucide-react';
 
-// Feature flags - set to false to hide features
-const FEATURE_FLAGS = {
-  showJoinTeam: false,
-};
-
 function About() {
   const stats = [
     { number: '1998', label: 'Founded' },
@@ -265,17 +260,6 @@ function About() {
               </div>
             ))}
           </div>
-
-          {FEATURE_FLAGS.showJoinTeam && (
-            <div className="join-team-cta">
-              <h3>Join Our Team</h3>
-              <p>
-                We're always looking for exceptional talent to join our growing team.
-                Discover exciting career opportunities in precision engineering.
-              </p>
-              <button className="cta-button">View Open Positions</button>
-            </div>
-          )}
         </div>
       </section>
     </div>

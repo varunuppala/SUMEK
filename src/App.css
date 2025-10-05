@@ -296,10 +296,6 @@
   font-size: 1.2rem;
 }
 
-.play-icon {
-  font-size: 0.8rem;
-}
-
 /* Stats Section */
 .stats-section {
   background: var(--bg-tertiary);
@@ -337,74 +333,6 @@
 
 @media (max-width: 768px) {
   .stats-container {
-    flex-direction: column;
-    gap: 2rem;
-  }
-}
-
-/* Icon Buttons Section */
-.icon-buttons-section {
-  background: var(--bg-secondary);
-  padding: 80px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-.icon-buttons-container {
-  display: flex;
-  gap: 4rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-button {
-  width: 200px;
-  height: 200px;
-  background: var(--white);
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border: none;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  /* Make visible by default, let JS handle animations */
-  opacity: 1;
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateX(0) rotate(0deg);
-}
-
-.icon-button:hover {
-  transform: translateY(-5px) scale(1.1) rotate(0deg) !important;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-}
-
-.icon-button-icon {
-  font-size: 2.25rem; /* Reduced by 25% from 3rem */
-  margin-bottom: 1rem;
-  color: #5b9bd5;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon-button-icon svg {
-  color: #5b9bd5;
-}
-
-.icon-button-label {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--black);
-}
-
-@media (max-width: 768px) {
-  .icon-buttons-container {
     flex-direction: column;
     gap: 2rem;
   }
@@ -3026,8 +2954,6 @@
 }
 
 /* Apply glow effect to interactive elements */
-.icon-button:hover,
-.what-we-do-button:hover,
 .stand-out-card:hover {
   animation: pulseGlow 1.5s ease-in-out infinite;
 }
