@@ -1,15 +1,18 @@
 import React from 'react';
 
 function Clients() {
+  // Get the base URL from Vite config (handles GitHub Pages deployment)
+  const baseUrl = import.meta.env.BASE_URL;
+  
   const clients = [
-    { name: 'DRDO', logo: '/DRDO.png', link: '#' },
-    { name: 'ISRO', logo: '/ISRO.png', link: '#' },
-    { name: 'HAL', logo: '/HAL.png', link: '#' },
-    { name: 'BHEL', logo: '/BHEL.png', link: '#' },
-    { name: 'BEML', logo: '/BEML.png', link: '#' },
-    { name: 'NSIL', logo: '/NSIL.png', link: '#' },
-    { name: 'BDL', logo: '/BDL.png', link: '#' },
-    { name: 'MIDHANI', logo: '/MIDHANI.png', link: '#' }
+    { name: 'DRDO', logo: `${baseUrl}DRDO.png`, link: '#' },
+    { name: 'ISRO', logo: `${baseUrl}ISRO.png`, link: '#' },
+    { name: 'HAL', logo: `${baseUrl}HAL.png`, link: '#' },
+    { name: 'BHEL', logo: `${baseUrl}BHEL.png`, link: '#' },
+    { name: 'BEML', logo: `${baseUrl}BEML.png`, link: '#' },
+    { name: 'NSIL', logo: `${baseUrl}NSIL.png`, link: '#' },
+    { name: 'BDL', logo: `${baseUrl}BDL.png`, link: '#' },
+    { name: 'MIDHANI', logo: `${baseUrl}MIDHANI.png`, link: '#' }
   ];
 
   return (
@@ -32,8 +35,12 @@ function Clients() {
             >
               <img 
                 src={client.logo} 
-                alt={client.name}
+                alt={`${client.name} logo`}
                 className="client-logo-image"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  console.error(`Failed to load image: ${client.logo}`);
+                }}
               />
             </div>
           ))}
