@@ -14,6 +14,34 @@ function Expansion() {
         </div>
       </section>
 
+      {/* Current Focus Section - High Priority */}
+      <section className="expansion-focus-section">
+        <div className="expansion-container">
+          <div className="section-tag" style={{ color: '#e63946', fontWeight: 'bold', marginBottom: '1rem' }}>HIGH PRIORITY</div>
+          <h2 className="section-title">Current Focus</h2>
+          <div className="focus-highlight">
+            <div className="focus-item">
+              <h3 className="focus-title">🚀 Facility Expansion</h3>
+              <p className="focus-description">
+                Rapid expansion of manufacturing capabilities with state-of-the-art infrastructure and advanced equipment
+              </p>
+            </div>
+            <div className="focus-item">
+              <h3 className="focus-title">⚡ C-SiC Material Manufacturing</h3>
+              <p className="focus-description">
+                Establishing complete in-house C-SiC (Carbon Silicon Carbide) material manufacturing capabilities from raw material to finished product
+              </p>
+            </div>
+            <div className="focus-item">
+              <h3 className="focus-title">🔧 Advanced C-SiC Machining</h3>
+              <p className="focus-description">
+                Developing next-generation precision machining processes specifically optimized for C-SiC composite materials
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Current Expansion Section */}
       <section className="expansion-current-section">
         <div className="expansion-container">

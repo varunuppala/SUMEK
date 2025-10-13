@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield, Plane } from 'lucide-react';
+import { Shield, Plane, Zap } from 'lucide-react';
 
 function WhatWeDo() {
   const [selectedService, setSelectedService] = useState(null);
@@ -18,7 +18,7 @@ function WhatWeDo() {
         'Precision machining for defense components',
         'Carbon composite manufacturing (C-SIC, FRP)',
         'Advanced materials: Titanium, Chromium, Nemonic, Armour Steel',
-        'ISO 9001:2015 & AS9100 (in progress)'
+        'ISO 9001:2015 certified'
       ],
       applications: [
         'Nozzle Assembly',
@@ -51,6 +51,30 @@ function WhatWeDo() {
         'UAV & Drone Parts'
       ],
       backgroundImage: '/api/placeholder/800/400'
+    },
+    {
+      id: 'oil-power',
+      icon: <Zap size={48} strokeWidth={1.5} />,
+      title: 'OIL & POWER GENERATION',
+      description: 'Energy sector solutions',
+      link: 'Learn more →',
+      modalTitle: 'OIL & POWER GENERATION',
+      modalSubtitle: 'Energy sector solutions',
+      modalDescription: 'Providing high-precision components and solutions for oil & gas and power generation industries. Our advanced manufacturing capabilities ensure reliability and performance in demanding energy sector applications.',
+      keyCapabilities: [
+        'Precision machining for turbines and generators',
+        'High-temperature resistant materials',
+        'Custom component manufacturing',
+        'Quality assurance and testing'
+      ],
+      applications: [
+        'Turbine Components',
+        'Generator Parts',
+        'Pump Components',
+        'Heat Exchanger Parts',
+        'Valve Components'
+      ],
+      backgroundImage: '/api/placeholder/800/400'
     }
   ];
 
@@ -70,7 +94,7 @@ function WhatWeDo() {
           <h2 className="what-we-do-title">What We Do</h2>
           <p className="what-we-do-subtitle">
             At S & U MEK we deliver precision engineering and complete product solutions for 
-            aerospace and defense sectors - from raw material to finished product.
+            aerospace, defense, and oil & power generation sectors - from raw material to finished product.
           </p>
         </div>
         <div className="what-we-do-grid">

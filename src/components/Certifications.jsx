@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Plane, Zap, BadgeCheck } from 'lucide-react';
+import { Award, BadgeCheck } from 'lucide-react';
 
 function Certifications() {
   const certifications = [
@@ -8,18 +8,6 @@ function Certifications() {
       title: 'ISO 9001:2015',
       category: 'Quality',
       description: 'Quality Management Systems certification demonstrating commitment to consistent quality and customer satisfaction through rigorous processes.'
-    },
-    {
-      icon: <Plane size={32} strokeWidth={1.5} />,
-      title: 'AS9100',
-      category: 'Aerospace',
-      description: 'Aerospace quality management certification in progress, ensuring highest standards in aerospace manufacturing and supply chain management.'
-    },
-    {
-      icon: <Zap size={32} strokeWidth={1.5} />,
-      title: 'IEC',
-      category: 'Standards',
-      description: 'International Electrotechnical Commission standards compliance for electrical and electronic technologies used in manufacturing.'
     },
     {
       icon: <BadgeCheck size={32} strokeWidth={1.5} />,

@@ -1,60 +1,118 @@
 import React from 'react';
+import { Plane, Shield, Zap } from 'lucide-react';
 
 function Products() {
-  const products = [
+  const productCategories = [
     {
       id: 1,
-      name: 'Air Intake Caps',
-      image: '/api/placeholder/300/250',
-      description: 'Precision-engineered air intake caps for aerospace applications'
+      category: 'Aerospace Components',
+      icon: <Plane size={32} strokeWidth={1.5} />,
+      products: [
+        { 
+          name: 'Air Intake Assembly', 
+          description: 'Complete air intake assembly solutions for aircraft systems with precision-engineered caps and integrated components',
+          image: '/Air Intake Caps.png'
+        },
+        { 
+          name: 'Turbine Blades', 
+          description: 'High-precision turbine blades manufactured to aerospace standards for optimal performance',
+          image: '/Turbine Blades.png'
+        },
+        { 
+          name: 'Panels with Stiffeners', 
+          description: 'Riveted MOC - AA2014 panels with integrated stiffeners for structural applications',
+          image: '/Panels with Stiffeners Rivetted.png'
+        },
+        { 
+          name: 'Forged Part Machining', 
+          description: 'Precision machining of forged aircraft components including complex geometries',
+          image: '/Forged Aircraft Parts.png'
+        },
+        { 
+          name: 'Air Frame', 
+          description: 'Welded airframe structures with 100% radiography testing for aircraft applications',
+          image: '/Air Frame.png'
+        },
+        { 
+          name: 'Angle Rings', 
+          description: 'High-precision angle rings for aircraft assembly and structural systems',
+          image: '/Angle Rings.png'
+        },
+        { 
+          name: 'Magnesium Alloy Castings', 
+          description: 'Lightweight magnesium alloy casting machining for aerospace components',
+          image: '/Magnesium Alloy Castings.png'
+        }
+      ]
     },
     {
       id: 2,
-      name: 'Panels with Stiffeners',
-      image: '/api/placeholder/300/250',
-      description: 'Riveted MOC - AA2014 panels with integrated stiffeners'
+      category: 'Defense Components',
+      icon: <Shield size={32} strokeWidth={1.5} />,
+      products: [
+        { 
+          name: 'Nozzle Assemblies', 
+          description: 'High-performance nozzle assemblies for rocket motors and propulsion systems',
+          image: '/Nozzle Assembly.png'
+        },
+        { 
+          name: 'Actuation Gear Box', 
+          description: 'Precision-engineered actuation gear boxes for defense and aerospace applications',
+          image: '/Actuation Gear Box.png'
+        },
+        { 
+          name: 'C-SiC Jet Vanes', 
+          description: 'Advanced carbon silicon carbide jet vanes for high-temperature thrust vectoring',
+          image: '/C-SiC Jet Vanes.png'
+        },
+        { 
+          name: 'C-SiC Throat Inserts', 
+          description: 'High-temperature resistant C-SiC throat inserts for rocket motor nozzles',
+          image: '/C-SiC Throat Inserts.png'
+        },
+        { 
+          name: 'C-SiC Outboard Panels', 
+          description: 'Lightweight and heat-resistant C-SiC outboard panels for aerospace vehicles',
+          image: '/C-SiC Outboard Panels.png'
+        },
+        { 
+          name: 'C-SiC Tiles', 
+          description: 'Advanced C-SiC tiles for thermal protection and structural applications',
+          image: '/C-SiC Tiles.png'
+        },
+        { 
+          name: 'Steel Rocket Motor Castings', 
+          description: 'Heavy-duty steel rocket motor castings for defense propulsion systems',
+          image: '/Steel Rocket Motor Castings.png'
+        }
+      ]
     },
     {
       id: 3,
-      name: 'ANGLE Rings',
-      image: '/api/placeholder/300/250',
-      description: 'High-precision angle rings for aircraft systems'
-    },
-    {
-      id: 4,
-      name: 'Air Intake Assembly',
-      image: '/api/placeholder/300/250',
-      description: 'Complete air intake assembly solutions'
-    },
-    {
-      id: 5,
-      name: 'Magnesium Alloy Castings',
-      image: '/api/placeholder/300/250',
-      description: 'Machining of magnesium alloy castings'
-    },
-    {
-      id: 6,
-      name: 'Forged Aircraft Parts',
-      image: '/api/placeholder/300/250',
-      description: 'Machining of forged aircraft parts'
-    },
-    {
-      id: 7,
-      name: 'Steam Turbine Regulation Assembly',
-      image: '/api/placeholder/300/250',
-      description: 'Complete turbine regulation assemblies'
-    },
-    {
-      id: 8,
-      name: 'T5 CD V6 Welded Airframe',
-      image: '/api/placeholder/300/250',
-      description: '100% radiography tested welded airframes'
-    },
-    {
-      id: 9,
-      name: 'Inserts',
-      image: '/api/placeholder/300/250',
-      description: 'Precision-machined inserts for various applications'
+      category: 'Industrial & Power',
+      icon: <Zap size={32} strokeWidth={1.5} />,
+      products: [
+        { 
+          name: 'Steam Turbine Regulation Assembly', 
+          description: 'Complete turbine regulation assemblies for power generation and industrial applications',
+          image: '/Steam Turbine Regulation Assembly .png'
+        },
+        { 
+          name: 'Turbine Pump Impeller', 
+          description: 'Precision-machined pump impellers for high-efficiency fluid transfer systems',
+          image: '/Turbine Pump Impeller.png'
+        },
+        { 
+          name: 'Steam Turbine Blades', 
+          description: 'High-performance steam turbine blades for power generation equipment',
+          image: '/Steam Turbine Blades.png'
+        },
+        { 
+          name: 'Precision Inserts', 
+          description: 'Custom-machined inserts for various industrial and power generation applications',
+          image: '/Inserts.png'
+        }
+      ]
     }
   ];
 
@@ -65,29 +123,39 @@ function Products() {
         <div className="products-hero-container">
           <h1 className="products-hero-title">PRODUCTS</h1>
           <p className="products-hero-description">
-            Precision-engineered components for aerospace and defense applications
+            Precision-engineered components for aerospace, defense, and industrial applications
           </p>
         </div>
       </section>
 
-      {/* Products Grid Section */}
-      <section className="products-grid-section">
-        <div className="products-grid-container">
-          <div className="products-grid">
-            {products.map((product) => (
-              <div key={product.id} className="product-card">
-                <div className="product-image-wrapper">
-                  <div className="product-image-placeholder">
-                    <span className="product-icon">🔧</span>
-                  </div>
-                </div>
-                <div className="product-info">
-                  <h3 className="product-name">{product.name}</h3>
-                  <p className="product-description">{product.description}</p>
-                </div>
+      {/* Products by Category Section */}
+      <section className="products-categories-section">
+        <div className="products-categories-container">
+          {productCategories.map((category) => (
+            <div key={category.id} className="product-category-section">
+              <div className="category-header">
+                <div className="category-icon">{category.icon}</div>
+                <h2 className="category-title">{category.category}</h2>
               </div>
-            ))}
-          </div>
+              <div className="products-grid">
+                {category.products.map((product, index) => (
+                  <div key={index} className="product-card">
+                    <div className="product-image-wrapper">
+                      <img 
+                        src={product.image} 
+                        alt={product.name} 
+                        className="product-image"
+                      />
+                    </div>
+                    <div className="product-info">
+                      <h3 className="product-name">{product.name}</h3>
+                      <p className="product-description">{product.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
           
           <div className="products-footer">
             <p className="products-more-text">AND MORE...</p>
