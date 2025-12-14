@@ -17,7 +17,7 @@ function Expansion() {
       {/* Current Focus Section - High Priority */}
       <section className="expansion-focus-section">
         <div className="expansion-container">
-          <div className="section-tag" style={{ color: '#e63946', fontWeight: 'bold', marginBottom: '1rem' }}>HIGH PRIORITY</div>
+          <div className="section-tag" style={{ color: 'var(--danger)', fontWeight: 'bold', marginBottom: '1rem' }}>HIGH PRIORITY</div>
           <h2 className="section-title">Current Focus</h2>
           <div className="focus-highlight">
             <div className="focus-item">

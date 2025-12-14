@@ -77,7 +77,6 @@ function About() {
           <div className="about-hero-content">
             <div className="section-tag">LEARN ABOUT US</div>
             <h1 className="about-hero-title">
-              <span>ABOUT</span>
               <span className="text-blue">S & U MEK</span>
             </h1>
             <p className="about-hero-description">
@@ -122,14 +121,6 @@ function About() {
                 machining them with next-generation processes, and delivering them as complete 
                 solutions for the aerospace and defense sector.
               </p>
-            </div>
-          </div>
-          <div className="story-image">
-            <div className="image-placeholder">
-              <div className="stats-overlay">
-                <span className="stat-number">26+</span>
-                <span className="stat-label">Years of Excellence</span>
-              </div>
             </div>
           </div>
         </div>

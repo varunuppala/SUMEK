@@ -104,7 +104,7 @@ function WhatWeDo() {
               className="service-card hover-3d" 
               onClick={() => openModal(service)}
               style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${service.backgroundImage})`,
+                backgroundImage: `linear-gradient(var(--overlay-1), var(--overlay-2)), url(${service.backgroundImage})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
               }}

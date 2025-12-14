@@ -44,7 +44,7 @@
 
 .theme-toggle-btn:hover {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #1a4971;
+  border-color: var(--brand);
   transform: translateY(-2px);
 }
 
@@ -61,7 +61,7 @@
 .logo {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #1a4971 0%, #2c4f7c 100%);
+  background: linear-gradient(135deg, var(--surface-2) 0%, rgba(255, 255, 255, 0.06) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,8 +71,8 @@
   text-align: center;
   line-height: 1.2;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(30, 58, 95, 0.3);
-  border: 1px solid rgba(184, 189, 196, 0.2);
+  box-shadow: 0 6px 18px var(--shadow-color);
+  border: 1px solid var(--border-color);
 }
 
 .company-name {
@@ -177,8 +177,8 @@
 .hero-section {
   background: var(--bg-tertiary);
   color: var(--text-secondary);
-  padding: 90px 0 80px;
-  min-height: 80vh;
+  padding: 60px 0 40px;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,7 +198,7 @@
 }
 
 .hero-tagline {
-  color: #5b9bd5;
+  color: var(--brand);
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 2.5px;
@@ -272,12 +272,12 @@
 }
 
 .hero-btn-primary {
-  background: #1a4971;
+  background: var(--brand);
   color: white;
 }
 
 .hero-btn-primary:hover {
-  background: #0a1929;
+  background: var(--surface-0);
   transform: translateY(-2px);
 }
 
@@ -320,7 +320,7 @@
 .stat-number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--text-secondary);
+  color: var(--accent-primary);
   margin-bottom: 0.5rem;
   line-height: 1.2;
 }
@@ -357,7 +357,7 @@
 }
 
 .section-tag {
-  color: #5b9bd5;
+  color: var(--brand);
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 2.5px;
@@ -412,7 +412,7 @@
 
 .service-card:hover {
   background: rgba(255, 255, 255, 0.16);
-  border-color: #5b9bd5;
+  border-color: var(--accent-primary);
   transform: translateY(-5px);
 }
 
@@ -427,11 +427,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #5b9bd5;
+  color: var(--accent-primary);
 }
 
 .service-icon svg {
-  color: #5b9bd5;
+  color: var(--accent-primary);
   transition: transform 0.3s ease;
 }
 
@@ -450,14 +450,14 @@
 }
 
 .service-link {
-  color: #5b9bd5;
+  color: var(--brand);
   font-weight: 500;
   font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
 .service-link:hover {
-  color: #8fc3f0;
+  color: var(--brand-muted);
 }
 
 /* Modal Styles */
@@ -535,13 +535,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #132f4c, #1a4971);
+  background: linear-gradient(135deg, var(--surface-2), var(--surface-0));
 }
 
 .modal-background-placeholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #132f4c, #1a4971, #2c5282);
+  background: linear-gradient(135deg, var(--surface-2), var(--surface-0), rgba(255, 255, 255, 0.06));
   position: relative;
   overflow: hidden;
 }
@@ -752,7 +752,7 @@
 
 .capability-card:hover {
   background: rgba(255, 255, 255, 0.16);
-  border-color: #5b9bd5;
+  border-color: var(--accent-primary);
   transform: translateY(-5px);
 }
 
@@ -769,7 +769,7 @@
 
 .capability-icon {
   font-size: 2rem;
-  color: #5b9bd5;
+  color: var(--accent-primary);
   line-height: 1;
   flex-shrink: 0;
   display: flex;
@@ -778,7 +778,7 @@
 }
 
 .capability-icon svg {
-  color: #5b9bd5;
+  color: var(--accent-primary);
   transition: transform 0.3s ease;
 }
 
@@ -878,7 +878,7 @@
 .cert-icon {
   font-size: 2rem;
   flex-shrink: 0;
-  background: linear-gradient(45deg, #1a4971, #5b9bd5);
+  background: linear-gradient(45deg, var(--bg-secondary), var(--accent-primary));
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -1024,7 +1024,7 @@
 .trust-stat-number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--text-secondary);
+  color: var(--accent-primary);
   margin-bottom: 0.5rem;
 }
 
@@ -1147,8 +1147,8 @@
 }
 
 .social-link:hover {
-  background: #5b9bd5;
-  border-color: #5b9bd5;
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
   transform: translateY(-2px);
 }
 
@@ -1196,7 +1196,7 @@
 
 .contact-icon {
   font-size: 1rem;
-  color: #5b9bd5;
+  color: var(--accent-primary);
   margin-top: 0.2rem;
   display: flex;
   align-items: center;
@@ -1204,7 +1204,7 @@
 }
 
 .contact-icon svg {
-  color: #5b9bd5;
+  color: var(--accent-primary);
 }
 
 .contact-details p {
@@ -1299,7 +1299,7 @@
 }
 
 .navbar-links button:hover {
-  color: #5b9bd5;
+  color: var(--accent-primary);
 }
 
 .navbar-links button:hover:not(.active)::after {
@@ -1309,7 +1309,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #5b9bd5;
+  background-color: var(--accent-primary);
   animation: slideInUnderline 0.3s ease-out;
 }
 
@@ -1326,8 +1326,8 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #5b9bd5;
-  box-shadow: 0 0 8px rgba(91, 155, 213, 0.6);
+  background-color: var(--accent-primary);
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
 }
 
 .navbar-logo {
@@ -1392,7 +1392,7 @@
 }
 
 .cta-text {
-  color: #5b9bd5;
+  color: var(--accent-primary);
   font-weight: 600;
   letter-spacing: 2px;
   font-size: 0.9rem;
@@ -1400,7 +1400,7 @@
 
 .cta-arrow {
   font-size: 1.5rem;
-  color: #5b9bd5;
+  color: var(--accent-primary);
   animation: bounce 2s infinite;
 }
 
@@ -1479,7 +1479,7 @@
   display: block;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #1a4971;
+  color: var(--accent-primary);
   margin-bottom: 0.5rem;
 }
 
@@ -1503,13 +1503,13 @@
 .about-stat-number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #1a4971;
+  color: var(--accent-primary);
   margin-bottom: 0.5rem;
 }
 
 .about-stat-label {
   font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-tertiary);
 }
 
 /* Mission Section */
@@ -1559,16 +1559,17 @@
 }
 
 .mission-quote cite {
-  color: #1a4971;
+  color: var(--accent-primary);
   font-weight: 600;
   font-style: normal;
 }
 
 .vision-card {
-  background: #1a4971;
-  color: white;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
   padding: 3rem;
   border-radius: 16px;
+  border: 1px solid var(--border-color);
   margin: 3rem auto;
   max-width: 800px;
   text-align: center;
@@ -1578,6 +1579,7 @@
   font-size: 2rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
+  color: var(--accent-primary);
 }
 
 .vision-card p {
@@ -1669,17 +1671,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #5b9bd5;
+  color: var(--accent-primary);
 }
 
 .timeline-icon svg {
-  color: #5b9bd5;
+  color: var(--accent-primary);
 }
 
 .timeline-year {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #5b9bd5;
+  color: var(--accent-primary);
   margin-bottom: 0.5rem;
 }
 
@@ -1717,7 +1719,7 @@
 }
 
 .timeline-cta {
-  color: #1a4971;
+  color: var(--accent-primary);
   font-weight: 600;
   font-size: 1.1rem;
 }
@@ -2047,7 +2049,7 @@
 .capabilities-hero-title {
   font-size: 4rem;
   font-weight: 700;
-  color: #1a4971;
+  color: var(--text-primary);
   margin-bottom: 2rem;
   line-height: 1.2;
 }
@@ -2140,7 +2142,7 @@
 }
 
 .process-number {
-  background: linear-gradient(135deg, #1a4971, #0a1929);
+  background: linear-gradient(135deg, var(--accent-primary), var(--bg-tertiary));
   color: white;
   width: 42px;
   height: 42px;
@@ -2151,13 +2153,13 @@
   font-weight: bold;
   font-size: 1.1rem;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(91, 155, 213, 0.3);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
   transition: all 0.3s ease;
 }
 
 .process-card:hover .process-number {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(91, 155, 213, 0.5);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
 }
 
 .process-info {
@@ -2233,7 +2235,7 @@
 
 .capability-card:hover {
   background: rgba(255, 255, 255, 0.16);
-  border-color: #5b9bd5;
+  border-color: var(--accent-primary);
   transform: translateY(-5px);
 }
 
@@ -2363,7 +2365,7 @@
 }
 
 .flow-icon {
-  background: #1a4971;
+  background: var(--accent-primary);
   color: white;
   width: 60px;
   height: 60px;
@@ -2378,7 +2380,7 @@
 
 .flow-step:hover .flow-icon {
   transform: scale(1.1);
-  box-shadow: 0 10px 25px rgba(91, 155, 213, 0.3);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
 }
 
 .flow-title {
@@ -2508,7 +2510,7 @@
 }
 
 [data-theme="light"] .stat-number {
-  color: #1a4971;
+  color: var(--accent-primary);
 }
 
 [data-theme="light"] .stat-label {
@@ -2651,7 +2653,7 @@
 }
 
 [data-theme="light"] .trust-stat-number {
-  color: #1a4971;
+  color: var(--accent-primary);
 }
 
 [data-theme="light"] .trust-stat-label {
@@ -2723,7 +2725,7 @@
 }
 
 [data-theme="light"] .cta-text {
-  color: #1a4971;
+  color: var(--accent-primary);
 }
 
 [data-theme="light"] .about-story {
@@ -2739,11 +2741,11 @@
 }
 
 [data-theme="light"] .about-stat-number {
-  color: #1a4971;
+  color: var(--accent-primary);
 }
 
 [data-theme="light"] .about-stat-label {
-  color: #2c3e50;
+  color: var(--text-tertiary);
 }
 
 [data-theme="light"] .about-mission {
@@ -2769,7 +2771,7 @@
 }
 
 [data-theme="light"] .vision-card h3 {
-  color: #1a1a1a;
+  color: var(--accent-primary);
 }
 
 [data-theme="light"] .vision-card p {
@@ -2802,7 +2804,7 @@
 }
 
 [data-theme="light"] .timeline-cta {
-  color: #2c3e50;
+  color: var(--accent-primary);
 }
 
 [data-theme="light"] .about-team {
@@ -2911,7 +2913,7 @@
 }
 
 [data-theme="light"] .process-number {
-  background: #1a4971;
+  background: var(--accent-primary);
   color: white;
 }
 
@@ -3081,7 +3083,7 @@
 .products-hero-title {
   font-size: 4rem;
   font-weight: 700;
-  color: #1a4971;
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
   line-height: 1.2;
   letter-spacing: 0.5px;
@@ -3143,7 +3145,7 @@
 }
 
 .category-icon {
-  color: #5b9bd5;
+  color: var(--accent-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3264,7 +3266,7 @@
 }
 
 .products-contact-btn {
-  background: #1a4971;
+  background: var(--brand);
   color: white;
   border: none;
   padding: 1rem 2.5rem;
@@ -3279,14 +3281,14 @@
 }
 
 .products-contact-btn:hover {
-  background: #0a1929;
+  background: var(--surface-0);
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(91, 155, 213, 0.3);
 }
 
 /* Products CTA Section */
 .products-cta-section {
-  background: linear-gradient(135deg, #1a4971 0%, #0a1929 100%);
+  background: linear-gradient(135deg, var(--surface-2) 0%, var(--surface-0) 100%);
   padding: 80px 0;
   text-align: center;
   color: white;
@@ -3314,7 +3316,7 @@
 
 .products-cta-button {
   background: white;
-  color: #1a4971;
+  color: var(--brand);
   border: none;
   padding: 1rem 2.5rem;
   border-radius: 8px;
@@ -3467,7 +3469,7 @@
 
 .focus-item {
   background: var(--bg-secondary);
-  border: 2px solid #5b9bd5;
+  border: 2px solid var(--accent-primary);
   border-radius: 12px;
   padding: 2rem;
   transition: all 0.3s ease;
@@ -3530,11 +3532,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #5b9bd5;
+  color: var(--accent-primary);
 }
 
 .expansion-icon svg {
-  color: #5b9bd5;
+  color: var(--accent-primary);
 }
 
 .expansion-card-title {
@@ -3628,7 +3630,7 @@
 .career-hero-title {
   font-size: 4rem;
   font-weight: 700;
-  color: #1a4971;
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
@@ -3682,11 +3684,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #5b9bd5;
+  color: var(--accent-primary);
 }
 
 .benefit-icon svg {
-  color: #5b9bd5;
+  color: var(--accent-primary);
 }
 
 .benefit-title {
@@ -3739,7 +3741,7 @@
 }
 
 .opening-badge {
-  background: #1a4971;
+  background: var(--brand);
   color: white;
   padding: 0.4rem 1rem;
   border-radius: 20px;
@@ -3769,7 +3771,7 @@
 }
 
 .opening-apply-btn {
-  background: #1a4971;
+  background: var(--brand);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -3782,12 +3784,12 @@
 }
 
 .opening-apply-btn:hover {
-  background: #0a1929;
+  background: var(--surface-0);
   transform: translateY(-2px);
 }
 
 .career-cta-section {
-  background: linear-gradient(135deg, #1a4971 0%, #0a1929 100%);
+  background: linear-gradient(135deg, var(--surface-2) 0%, var(--surface-0) 100%);
   padding: 80px 0;
   text-align: center;
   color: white;
@@ -3815,7 +3817,7 @@
 
 .career-cta-button {
   background: white;
-  color: #1a4971;
+  color: var(--brand);
   border: none;
   padding: 1rem 2.5rem;
   border-radius: 8px;
@@ -3906,7 +3908,7 @@
 .contact-hero-title {
   font-size: 4rem;
   font-weight: 700;
-  color: #1a4971;
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
@@ -4003,7 +4005,7 @@
 }
 
 .contact-submit-btn {
-  background: linear-gradient(135deg, #5b9bd5 0%, #1a4971 100%);
+  background: linear-gradient(135deg, var(--brand) 0%, rgba(201, 162, 39, 0.75) 100%);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -4022,7 +4024,7 @@
 
 .contact-submit-btn:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(91, 155, 213, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
 .contact-submit-btn:disabled {
@@ -4153,13 +4155,13 @@
   justify-content: center;
   min-width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, rgba(91, 155, 213, 0.15) 0%, rgba(91, 155, 213, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.05) 100%);
   border-radius: 10px;
-  color: #5b9bd5;
+  color: var(--accent-primary);
 }
 
 .contact-info-icon svg {
-  color: #5b9bd5;
+  color: var(--accent-primary);
 }
 
 .contact-info-content {
@@ -4183,17 +4185,18 @@
 /* Business Hours */
 .business-hours {
   padding: 2rem;
-  background: linear-gradient(135deg, #1a4971 0%, #0a1929 100%);
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
   border-radius: 12px;
-  color: white;
+  color: var(--text-primary);
   margin-top: 1rem;
+  border: 1px solid var(--border-color);
 }
 
 .business-hours h4 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: white;
+  color: var(--accent-primary);
 }
 
 .business-hours p {
@@ -4522,9 +4525,9 @@ section {
 
 /* Business Hours Metallic Effect */
 .business-hours {
-  background: linear-gradient(135deg, #1a4971 0%, #2c4f7c 100%);
-  border: 1px solid rgba(184, 189, 196, 0.2);
-  box-shadow: 0 4px 12px rgba(30, 58, 95, 0.4);
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px var(--shadow-color);
 }
 
 /* Composite Material Manufacturing Section */
@@ -4565,11 +4568,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #5b9bd5;
+  color: var(--accent-primary);
 }
 
 .composite-icon svg {
-  color: #5b9bd5;
+  color: var(--accent-primary);
 }
 
 .composite-title {
@@ -4602,18 +4605,18 @@ section {
 
 /* Composite Highlight Box */
 .composite-highlight {
-  background: linear-gradient(135deg, #1a4971 0%, #2c4f7c 100%);
-  border: 1px solid rgba(184, 189, 196, 0.2);
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  border: 1px solid var(--border-color);
   border-radius: 16px;
   padding: 2.5rem;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(30, 58, 95, 0.4);
+  box-shadow: 0 4px 12px var(--shadow-color);
 }
 
 .composite-highlight h3 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: white;
+  color: var(--accent-primary);
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
@@ -4623,7 +4626,7 @@ section {
 
 .composite-highlight p {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.95);
+  color: var(--text-secondary);
   line-height: 1.8;
   max-width: 900px;
   margin: 0 auto;
@@ -4674,4 +4677,132 @@ section {
   .composite-highlight p {
     font-size: 1rem;
   }
+}
+
+/* ================================
+   Option A (Premium / Industrial)
+   Global palette overrides
+   ================================ */
+
+/* Core accents */
+[data-theme="dark"] .section-tag,
+[data-theme="dark"] .service-icon,
+[data-theme="dark"] .service-link,
+[data-theme="dark"] .capability-icon,
+[data-theme="dark"] .timeline-icon,
+[data-theme="dark"] .timeline-year,
+[data-theme="dark"] .contact-icon,
+[data-theme="dark"] .contact-info-icon,
+[data-theme="dark"] .category-icon {
+  color: var(--accent-primary) !important;
+}
+
+/* Replace legacy blue text highlights */
+[data-theme="dark"] .about-hero-title .text-blue {
+  color: var(--accent-primary) !important;
+}
+
+/* Navbar + logo */
+[data-theme="dark"] .navbar {
+  background: rgba(11, 18, 25, 0.92) !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .navbar.scrolled {
+  background: rgba(11, 18, 25, 0.98) !important;
+}
+
+[data-theme="dark"] .logo {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(255, 255, 255, 0.06) 100%) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45) !important;
+}
+
+/* Section backgrounds that were hard-coded blue */
+[data-theme="dark"] .about-hero,
+[data-theme="dark"] .about-story,
+[data-theme="dark"] .about-mission,
+[data-theme="dark"] .about-timeline,
+[data-theme="dark"] .about-team,
+[data-theme="dark"] .capabilities-hero,
+[data-theme="dark"] .products-hero,
+[data-theme="dark"] .expansion-hero,
+[data-theme="dark"] .career-hero,
+[data-theme="dark"] .contact-hero {
+  background: var(--bg-tertiary) !important;
+}
+
+/* Big “blue blocks” → charcoal surface with gold accent */
+[data-theme="dark"] .vision-card,
+[data-theme="dark"] .join-team-cta {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .vision-card h3,
+[data-theme="dark"] .join-team-cta h3 {
+  color: var(--accent-primary) !important;
+}
+
+/* Common hover borders that were blue */
+[data-theme="dark"] .service-card:hover,
+[data-theme="dark"] .capability-card:hover,
+[data-theme="dark"] .certification-card:hover,
+[data-theme="dark"] .client-logo-wrapper:hover,
+[data-theme="dark"] .product-card:hover,
+[data-theme="dark"] .expansion-card:hover,
+[data-theme="dark"] .benefit-card:hover,
+[data-theme="dark"] .opening-card:hover,
+[data-theme="dark"] .contact-info-item:hover,
+[data-theme="dark"] .team-card:hover {
+  border-color: var(--accent-primary) !important;
+}
+
+/* Timeline + tree connector lines */
+[data-theme="dark"] .timeline::before,
+[data-theme="dark"] .tree-line-vertical,
+[data-theme="dark"] .tree-line-horizontal,
+[data-theme="dark"] .tree-line-horizontal::before,
+[data-theme="dark"] .tree-line-horizontal::after {
+  background: var(--accent-secondary) !important;
+}
+
+/* Buttons + badges */
+[data-theme="dark"] .hero-btn-primary,
+[data-theme="dark"] .products-contact-btn,
+[data-theme="dark"] .contact-submit-btn,
+[data-theme="dark"] .opening-apply-btn,
+[data-theme="dark"] .career-cta-button,
+[data-theme="dark"] .products-cta-button,
+[data-theme="dark"] .expansion-status,
+[data-theme="dark"] .opening-badge,
+[data-theme="dark"] .capability-category {
+  background: var(--accent-primary) !important;
+  color: var(--bg-tertiary) !important;
+  border-color: transparent !important;
+}
+
+[data-theme="dark"] .hero-btn-primary:hover,
+[data-theme="dark"] .products-contact-btn:hover,
+[data-theme="dark"] .contact-submit-btn:hover:not(:disabled),
+[data-theme="dark"] .opening-apply-btn:hover,
+[data-theme="dark"] .career-cta-button:hover,
+[data-theme="dark"] .products-cta-button:hover {
+  filter: brightness(0.92);
+}
+
+/* Links */
+[data-theme="dark"] a:hover {
+  color: var(--accent-secondary);
+}
+
+/* Replace remaining “blue” feeling in key gradients */
+[data-theme="dark"] .products-cta-section,
+[data-theme="dark"] .career-cta-section {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 60%, rgba(255, 255, 255, 0.05) 100%) !important;
+}
+
+[data-theme="dark"] .modal-background-overlay {
+  background: linear-gradient(135deg, rgba(11, 18, 25, 0.35), rgba(11, 18, 25, 0.65)) !important;
 }
