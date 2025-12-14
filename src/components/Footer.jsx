@@ -12,19 +12,16 @@ function Footer() {
               <span className="footer-company-name">MEK Engineers</span>
             </div>
             <p className="footer-description">
-              Delivering precision engineering and complete product solutions 
-              for aerospace and defense sectors. From machining to carbon 
-              composite manufacturing - proudly Make in India.
+              A trusted partner in aerospace and defense manufacturing offering 
+              end-to-end solutions from precision machining to advanced carbon 
+              composites production. Fully designed, developed, and made in India.
             </p>
             <div className="footer-social">
-              <a href="https://www.linkedin.com/company/sumek" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/s-u-mek-engineers-pvt-ltd/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
                 <Linkedin size={20} strokeWidth={1.5} />
               </a>
               <a href="mailto:info@sumek.in" className="social-link" aria-label="Email">
                 <Mail size={20} strokeWidth={1.5} />
-              </a>
-              <a href="https://www.sumek.in" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Website">
-                <Globe size={20} strokeWidth={1.5} />
               </a>
             </div>
           </div>
@@ -52,7 +49,10 @@ function Footer() {
             </div>
             <div className="contact-item">
               <span className="contact-icon"><Phone size={18} strokeWidth={1.5} /></span>
-              <a href="tel:+919949946507" className="contact-link">+91 9949946507</a>
+              <div className="contact-details">
+                <a href="tel:+919949946507" className="contact-link" style={{ display: 'block' }}>+91 9949946507</a>
+                <a href="tel:+918886144000" className="contact-link" style={{ display: 'block' }}>+91 8886144000</a>
+              </div>
             </div>
             <div className="contact-item">
               <span className="contact-icon"><Mail size={18} strokeWidth={1.5} /></span>

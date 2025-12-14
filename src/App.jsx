@@ -28,10 +28,10 @@ function App() {
         return <Capabilities />;
       case 'products':
         return <Products />;
-      case 'expansion':
-        return <Expansion />;
+      // case 'expansion':
+      //   return <Expansion />;
       case 'career':
-        return <Career />;
+        return <Career setCurrentPage={setCurrentPage} />;
       case 'contact':
         return <Contact />;
       case 'home':

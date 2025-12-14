@@ -206,7 +206,8 @@ function Contact() {
                   <div className="contact-info-icon"><Phone size={24} strokeWidth={1.5} /></div>
                   <div className="contact-info-content">
                     <h4>Phone</h4>
-                    <p>+91 9949946507</p>
+                    <p><a href="tel:+919949946507" style={{ color: 'inherit', textDecoration: 'none' }}>+91 9949946507</a></p>
+                    <p><a href="tel:+918886144000" style={{ color: 'inherit', textDecoration: 'none' }}>+91 8886144000</a></p>
                   </div>
                 </div>
 

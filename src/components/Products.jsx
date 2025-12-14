@@ -108,6 +108,11 @@ function Products() {
           image: '/Steam Turbine Blades.png'
         },
         { 
+          name: 'Industrial Turbine Blades', 
+          description: 'Precision-engineered turbine blades for high-temperature alloys and critical rotating assemblies in oil, gas, and power generation',
+          image: '/turbine-blades-new.png'
+        },
+        { 
           name: 'Precision Inserts', 
           description: 'Custom-machined inserts for various industrial and power generation applications',
           image: '/Inserts.png'

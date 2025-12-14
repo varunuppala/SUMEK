@@ -1,38 +1,7 @@
 import React from 'react';
-import { Briefcase, Target, Award, Handshake } from 'lucide-react';
+import { Briefcase, Target, Award, Handshake, Mail } from 'lucide-react';
 
-function Career() {
-  const openings = [
-    {
-      id: 1,
-      title: 'CNC Machine Operator',
-      department: 'Production',
-      experience: '2-5 years',
-      location: 'Shamshabad, Telangana'
-    },
-    {
-      id: 2,
-      title: 'Quality Control Engineer',
-      department: 'Quality Assurance',
-      experience: '3-7 years',
-      location: 'Shamshabad, Telangana'
-    },
-    {
-      id: 3,
-      title: 'Design Engineer',
-      department: 'Engineering',
-      experience: '1-3 years',
-      location: 'Shamshabad, Telangana'
-    },
-    {
-      id: 4,
-      title: 'Production Manager',
-      department: 'Operations',
-      experience: '5-10 years',
-      location: 'Shamshabad, Telangana'
-    }
-  ];
-
+function Career({ setCurrentPage }) {
   return (
     <div className="career-page">
       {/* Hero Section */}
@@ -48,7 +17,7 @@ function Career() {
       {/* Why Join Us Section */}
       <section className="career-benefits-section">
         <div className="career-container">
-          <h2 className="section-title">Why Work With Us</h2>
+          <h2 className="section-title">Why work with us?</h2>
           
           <div className="benefits-grid">
             <div className="benefit-card">
@@ -78,43 +47,20 @@ function Career() {
         </div>
       </section>
 
-      {/* Current Openings Section */}
-      <section className="career-openings-section">
-        <div className="career-container">
-          <h2 className="section-title">Current Openings</h2>
-          
-          <div className="openings-list">
-            {openings.map((opening) => (
-              <div key={opening.id} className="opening-card">
-                <div className="opening-header">
-                  <h3 className="opening-title">{opening.title}</h3>
-                  <span className="opening-badge">{opening.department}</span>
-                </div>
-                <div className="opening-details">
-                  <div className="opening-detail">
-                    <span className="detail-label">Experience:</span>
-                    <span className="detail-value">{opening.experience}</span>
-                  </div>
-                  <div className="opening-detail">
-                    <span className="detail-label">Location:</span>
-                    <span className="detail-value">{opening.location}</span>
-                  </div>
-                </div>
-                <button className="opening-apply-btn">Apply Now →</button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
+      {/* Contact Us for Opportunities Section */}
       <section className="career-cta-section">
         <div className="career-cta-container">
-          <h2 className="career-cta-title">Don't See Your Role?</h2>
+          <h2 className="career-cta-title">Interested in joining us?</h2>
           <p className="career-cta-description">
-            We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.
+            We're always looking for talented individuals to join our team. Reach out to us to explore exciting career opportunities in aerospace and defense manufacturing.
           </p>
-          <button className="career-cta-button">Submit Your Resume</button>
+          <button 
+            className="career-cta-button"
+            onClick={() => setCurrentPage('contact')}
+          >
+            <Mail size={20} style={{ marginRight: '0.5rem' }} />
+            Contact Us for Opportunities
+          </button>
         </div>
       </section>
     </div>

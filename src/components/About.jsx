@@ -160,9 +160,8 @@ function About() {
           
           <div className="mission-quote">
             <blockquote>
-              "Aerospace and defense manufacturing continues to evolve, blending precision 
-              and innovation. Thank you for joining us. For more insights, contact our team. 
-              Together, let's shape the future."
+              "We thrive to stand at the forefront of India's aerospace and defense evolution 
+              — transforming innovation into impact, and precision into national strength."
             </blockquote>
             <cite>— S & U MEK Leadership Team</cite>
           </div>

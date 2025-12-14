@@ -7,25 +7,25 @@ function StandOut() {
       icon: <Ruler size={32} strokeWidth={1.5} />,
       title: 'Digital Design',
       category: 'Engineering',
-      description: 'Advanced 3D modeling, CAD/CAM design, and digital prototyping for precision aerospace components.'
+      description: 'Combining 3D modeling, CAD design, CAM programming, digital prototyping, reverse engineering and SOPs to accelerate innovation and ensure precision in every aerospace component.'
     },
     {
       icon: <Cog size={32} strokeWidth={1.5} />,
       title: 'Component Production',
       category: 'Manufacturing',
-      description: '5-axis CNC machining, precision turning, milling, and advanced manufacturing of critical components.'
+      description: 'Advanced comprehensive manufacturing excellence through multi axis CNC machining, precision turning, and milling — engineered for reliability in critical applications.'
+    },
+    {
+      icon: <FlaskConical size={32} strokeWidth={1.5} />,
+      title: 'Composite Manufacturing',
+      category: 'Advanced Materials',
+      description: 'Advanced carbon composite manufacturing and precision machining for lightweight, high-strength, high temperature aerospace components — including full-scale production and machining of diverse composite materials.'
     },
     {
       icon: <Wrench size={32} strokeWidth={1.5} />,
       title: 'Integrated Assembly',
       category: 'Integration',
       description: 'Complete assembly solutions from individual components to full systems with rigorous testing.'
-    },
-    {
-      icon: <FlaskConical size={32} strokeWidth={1.5} />,
-      title: 'Composite Manufacturing',
-      category: 'Advanced Materials',
-      description: 'Cutting-edge carbon composite manufacturing for lightweight, high-strength aerospace applications.'
     },
     {
       icon: <CheckCircle2 size={32} strokeWidth={1.5} />,
@@ -45,10 +45,10 @@ function StandOut() {
     <section className="stand-out-section">
       <div className="stand-out-container">
         <div className="stand-out-header">
-          <div className="section-tag">WHY CHOOSE US</div>
+          <div className="section-tag">WHY CHOOSE US?</div>
           <h2 className="stand-out-title">How We Stand Out</h2>
           <p className="stand-out-subtitle">
-            End-to-end engineering capabilities from design to delivery, backed by decades of aerospace expertise.
+            Our end to end vertically integrated engineering capabilities — from digital design and material R&D to multi-axis machining and assembly — enable faster turnaround, tighter tolerances, and superior quality assurance.
           </p>
         </div>
         
