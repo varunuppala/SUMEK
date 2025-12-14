@@ -22,7 +22,7 @@ function Navbar({ currentPage, setCurrentPage }) {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-logo" onClick={() => setCurrentPage('home')}>
-          <img src="/Name-log-new-3.png" alt="S&U MEK Engineers" className="navbar-logo-img" />
+          <img src="/FullLogoFinal.png" alt="S&U MEK Engineers" className="navbar-logo-img" />
         </div>
         <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
           <li><button onClick={() => setCurrentPage('about')} className={currentPage === 'about' ? 'active' : ''}>About</button></li>
