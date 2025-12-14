@@ -16,14 +16,6 @@ function HeroSection() {
           From precision machining to advanced carbon composite manufacturing - delivering complete 
           solutions with unmatched quality, speed, and consistency.
         </p>
-        <div className="hero-buttons">
-          <button className="hero-btn hero-btn-primary">
-            Explore Our Work <span className="arrow">→</span>
-          </button>
-          <button className="hero-btn hero-btn-secondary">
-            <span className="play-icon">▶</span> Watch Demo
-          </button>
-        </div>
       </div>
     </section>
   );

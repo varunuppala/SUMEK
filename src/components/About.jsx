@@ -226,34 +226,40 @@ function About() {
             diverse team brings together decades of experience across critical engineering sectors.
           </p>
           
-          <div className="team-grid">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="team-card">
-                <div className="team-member-image">
-                  {member.image ? (
-                    <img src={member.image} alt={member.name} />
-                  ) : (
-                    <div className="image-placeholder">
-                      <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                      </svg>
-                    </div>
-                  )}
+          {/* Founder - Top of the tree */}
+          <div className="team-founder">
+            <div className="team-card founder-card">
+              <div className="team-member-info">
+                <h3 className="member-name">{teamMembers[0].name}</h3>
+                <p className="member-role">{teamMembers[0].role}</p>
+                <p className="member-description">{teamMembers[0].description}</p>
+                <div className="member-expertise">
+                  {teamMembers[0].expertise.map((skill, skillIndex) => (
+                    <span key={skillIndex} className="expertise-tag">{skill}</span>
+                  ))}
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Tree connector */}
+          <div className="team-tree-connector">
+            <div className="tree-line-vertical"></div>
+            <div className="tree-line-horizontal"></div>
+          </div>
+
+          {/* Directors - Bottom of the tree */}
+          <div className="team-directors">
+            {teamMembers.slice(1).map((member, index) => (
+              <div key={index} className="team-card director-card">
                 <div className="team-member-info">
                   <h3 className="member-name">{member.name}</h3>
                   <p className="member-role">{member.role}</p>
-                  <p className="member-location"><MapPin size={14} strokeWidth={2} style={{ display: 'inline', marginRight: '0.25rem' }} /> {member.location}</p>
                   <p className="member-description">{member.description}</p>
                   <div className="member-expertise">
                     {member.expertise.map((skill, skillIndex) => (
                       <span key={skillIndex} className="expertise-tag">{skill}</span>
                     ))}
-                  </div>
-                  <div className="member-contact">
-                    <button className="contact-btn"><Mail size={16} strokeWidth={2} /></button>
-                    <button className="linkedin-btn">in</button>
                   </div>
                 </div>
               </div>

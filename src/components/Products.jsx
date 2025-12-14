@@ -16,7 +16,7 @@ function Products() {
         { 
           name: 'Turbine Blades', 
           description: 'High-precision turbine blades manufactured to aerospace standards for optimal performance',
-          image: '/Turbine Blades.png'
+          image: '/turbine-blades-new.png'
         },
         { 
           name: 'Panels with Stiffeners', 
@@ -162,9 +162,6 @@ function Products() {
             </div>
           ))}
           
-          <div className="products-footer">
-            <p className="products-more-text">AND MORE...</p>
-          </div>
         </div>
       </section>
 
