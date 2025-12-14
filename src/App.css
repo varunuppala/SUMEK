@@ -6,7 +6,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 1rem 0;
+  padding: 0.2rem 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
 }
@@ -56,6 +56,13 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
+}
+
+.navbar-logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
 }
 
 .logo {
@@ -102,6 +109,7 @@
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -157,15 +165,15 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
   }
-  
+
   .navbar-links.active {
     display: flex;
   }
-  
+
   .hamburger {
     display: flex;
   }
-  
+
   .theme-toggle-btn {
     font-size: 1.2rem;
     width: 35px;
@@ -492,6 +500,7 @@
     transform: scale(0.8) translateY(50px);
     opacity: 0;
   }
+
   to {
     transform: scale(1) translateY(0);
     opacity: 1;
@@ -660,19 +669,19 @@
     width: 95%;
     max-height: 90vh;
   }
-  
+
   .modal-header {
     height: 150px;
   }
-  
+
   .modal-header-content {
     padding: 1.5rem;
   }
-  
+
   .modal-title {
     font-size: 1.5rem;
   }
-  
+
   .modal-body {
     padding: 1.5rem;
   }
@@ -818,7 +827,7 @@
   .stand-out-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .capability-header {
     flex-direction: column;
     align-items: flex-start;
@@ -921,7 +930,7 @@
   .certifications-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .cert-header {
     flex-direction: column;
     align-items: flex-start;
@@ -1039,17 +1048,17 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-  
+
   .trust-stats {
     flex-direction: column;
     gap: 2rem;
   }
-  
+
   .client-logo-wrapper {
     min-height: 80px;
     padding: 1rem;
   }
-  
+
   .client-logo-image {
     max-height: 60px;
   }
@@ -1263,20 +1272,20 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .footer-bottom-content {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .footer-links {
     justify-content: center;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .what-we-do-title,
   .stand-out-title,
   .clients-title {
@@ -1341,7 +1350,8 @@
 
 /* Main Content Wrapper */
 .main-content {
-  margin-top: 80px; /* Account for fixed navbar */
+  margin-top: 80px;
+  /* Account for fixed navbar */
 }
 
 /* About Page Styles */
@@ -1405,12 +1415,19 @@
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-10px);
   }
+
   60% {
     transform: translateY(-5px);
   }
@@ -1826,15 +1843,15 @@
   .team-directors {
     grid-template-columns: 1fr;
   }
-  
+
   .tree-line-horizontal {
     display: none;
   }
-  
+
   .tree-line-vertical {
     height: 20px;
   }
-  
+
   .founder-card {
     max-width: 100%;
   }
@@ -1923,7 +1940,8 @@
   gap: 1rem;
 }
 
-.contact-btn, .linkedin-btn {
+.contact-btn,
+.linkedin-btn {
   width: 40px;
   height: 40px;
   border: none;
@@ -1947,7 +1965,8 @@
   font-weight: bold;
 }
 
-.contact-btn:hover, .linkedin-btn:hover {
+.contact-btn:hover,
+.linkedin-btn:hover {
   transform: translateY(-2px);
 }
 
@@ -1993,35 +2012,37 @@
   .about-hero-title {
     font-size: 2.5rem;
   }
-  
+
   .story-content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .about-stats {
     flex-direction: column;
     gap: 2rem;
   }
-  
-  .mission-title, .timeline-title, .team-title {
+
+  .mission-title,
+  .timeline-title,
+  .team-title {
     font-size: 2rem;
   }
-  
+
   .timeline::before {
     left: 2rem;
   }
-  
+
   .timeline-item {
     justify-content: flex-start !important;
   }
-  
+
   .timeline-content {
     width: calc(100% - 4rem);
     margin-left: 4rem !important;
     margin-right: 0 !important;
   }
-  
+
   .team-grid {
     grid-template-columns: 1fr;
   }
@@ -2422,32 +2443,32 @@
   .capabilities-hero-title {
     font-size: 2.5rem;
   }
-  
+
   .process-card {
     padding: 1.5rem;
   }
-  
+
   .process-number {
     width: 38px;
     height: 38px;
     font-size: 1rem;
   }
-  
+
   .capabilities-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-  
+
   .process-flow {
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
   }
-  
+
   .flow-connector {
     display: none;
   }
-  
+
   .flow-description {
     max-width: none;
   }
@@ -3023,12 +3044,15 @@
     transform: scale(0.3);
     opacity: 0;
   }
+
   50% {
     transform: scale(1.05);
   }
+
   70% {
     transform: scale(0.9);
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -3040,6 +3064,7 @@
     transform: translateX(-100%) rotate(-15deg);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0) rotate(0deg);
     opacity: 1;
@@ -3047,9 +3072,12 @@
 }
 
 @keyframes pulseGlow {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
+
   50% {
     box-shadow: 0 10px 30px rgba(30, 144, 255, 0.3);
   }
@@ -3377,24 +3405,24 @@
   .products-hero-title {
     font-size: 2.5rem;
   }
-  
+
   .products-hero-description {
     font-size: 1.1rem;
   }
-  
+
   .products-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .product-image-wrapper {
     height: 200px;
   }
-  
+
   .products-cta-title {
     font-size: 2rem;
   }
-  
+
   .products-cta-description {
     font-size: 1rem;
   }
@@ -3404,11 +3432,11 @@
   .products-hero {
     padding: 80px 0 40px;
   }
-  
+
   .products-hero-title {
     font-size: 2rem;
   }
-  
+
   .products-more-text {
     font-size: 1.5rem;
   }
@@ -3859,29 +3887,31 @@
 
 /* Responsive Design for Expansion & Career */
 @media (max-width: 1024px) {
+
   .expansion-grid,
   .vision-content {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .benefits-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
+
   .expansion-hero-title,
   .career-hero-title {
     font-size: 2.5rem;
   }
-  
+
   .expansion-grid,
   .vision-content,
   .benefits-grid,
   .openings-list {
     grid-template-columns: 1fr;
   }
-  
+
   .career-cta-title {
     font-size: 2rem;
   }
@@ -4043,7 +4073,9 @@
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Form Status Messages */
@@ -4085,6 +4117,7 @@
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -4250,15 +4283,15 @@
   .contact-hero-title {
     font-size: 2.5rem;
   }
-  
+
   .contact-hero-description {
     font-size: 1.1rem;
   }
-  
+
   .contact-form-wrapper {
     padding: 2rem;
   }
-  
+
   .contact-form-title,
   .contact-info-title {
     font-size: 1.5rem;
@@ -4269,20 +4302,20 @@
   .contact-hero {
     padding: 80px 0 40px;
   }
-  
+
   .contact-hero-title {
     font-size: 2rem;
   }
-  
+
   .contact-form-wrapper {
     padding: 1.5rem;
   }
-  
+
   .contact-info-item {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .contact-info-icon {
     margin: 0 auto;
   }
@@ -4303,20 +4336,21 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(
-    45deg,
-    transparent 30%,
-    rgba(184, 189, 196, 0.1) 50%,
-    transparent 70%
-  );
+  background: linear-gradient(45deg,
+      transparent 30%,
+      rgba(184, 189, 196, 0.1) 50%,
+      transparent 70%);
   transform: rotate(45deg);
   animation: metallicShine 3s ease-in-out infinite;
 }
 
 @keyframes metallicShine {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(-100%) translateY(-100%) rotate(45deg);
   }
+
   50% {
     transform: translateX(100%) translateY(100%) rotate(45deg);
   }
@@ -4366,6 +4400,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -4428,11 +4463,11 @@
   z-index: 0;
 }
 
-.hero-section > *,
-.products-hero > *,
-.expansion-hero > *,
-.career-hero > *,
-.contact-hero > * {
+.hero-section>*,
+.products-hero>*,
+.expansion-hero>*,
+.career-hero>*,
+.contact-hero>* {
   position: relative;
   z-index: 1;
 }
@@ -4663,17 +4698,17 @@ section {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .composite-header {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .composite-highlight h3 {
     font-size: 1.5rem;
     flex-direction: column;
   }
-  
+
   .composite-highlight p {
     font-size: 1rem;
   }
