@@ -1105,6 +1105,12 @@
   margin-bottom: 1.5rem;
 }
 
+.footer-logo-img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
 .footer-logo-icon {
   width: 40px;
   height: 40px;

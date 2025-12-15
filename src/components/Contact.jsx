@@ -30,10 +30,10 @@ function Contact() {
 
     try {
       // EmailJS configuration
-      // These will send emails to: karthik.gannaman@gmail.com
-      const serviceId = 'service_qifujwn'; // ✅ Your EmailJS service ID
-      const templateId = 'template_5gznllq'; // ✅ Your EmailJS template ID  
-      const publicKey = 'UWJ7mC9VY-sjmpuoL'; // ✅ Your EmailJS public key
+      // These will send emails to: info@sumek.in
+      const serviceId = 'service_qv8kanu'; // ✅ Your EmailJS service ID
+      const templateId = 'template_oavk4lj'; // ✅ Your EmailJS template ID  
+      const publicKey = '0lfpaTomboq9xhWgE'; // ✅ Your EmailJS public key
 
       // Send email using EmailJS
       const result = await emailjs.sendForm(
@@ -44,7 +44,7 @@ function Contact() {
       );
 
       console.log('Email sent successfully:', result.text);
-      
+
       // Success state
       setStatus({
         submitting: false,
@@ -55,7 +55,7 @@ function Contact() {
 
       // Reset form
       setFormData({ name: '', email: '', company: '', message: '' });
-      
+
       // Clear success message after 5 seconds
       setTimeout(() => {
         setStatus({ submitting: false, submitted: false, error: false, message: '' });
@@ -63,7 +63,7 @@ function Contact() {
 
     } catch (error) {
       console.error('Failed to send email:', error);
-      
+
       // Error state
       setStatus({
         submitting: false,
@@ -99,55 +99,55 @@ function Contact() {
             <div className="contact-form-wrapper">
               <h2 className="contact-form-title">Send us a Message</h2>
               <p className="contact-form-subtitle">Fill out the form below and we'll get back to you shortly</p>
-              
+
               <form ref={form} className="contact-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                   <label htmlFor="name">Full Name</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
                     placeholder="John Doe"
                     value={formData.name}
                     onChange={handleChange}
                     disabled={status.submitting}
-                    required 
+                    required
                   />
                 </div>
-                
+
                 <div className="form-group">
                   <label htmlFor="email">Email Address</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
                     placeholder="john@company.com"
                     value={formData.email}
                     onChange={handleChange}
                     disabled={status.submitting}
-                    required 
+                    required
                   />
                 </div>
-                
+
                 <div className="form-group">
                   <label htmlFor="company">Company</label>
-                  <input 
-                    type="text" 
-                    id="company" 
-                    name="company" 
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
                     placeholder="Your Company Name"
                     value={formData.company}
                     onChange={handleChange}
                     disabled={status.submitting}
                   />
                 </div>
-                
+
                 <div className="form-group">
                   <label htmlFor="message">Message</label>
-                  <textarea 
-                    id="message" 
-                    name="message" 
-                    rows="5" 
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
                     placeholder="Tell us about your project requirements..."
                     value={formData.message}
                     onChange={handleChange}
@@ -167,9 +167,9 @@ function Contact() {
                     <span>{status.message}</span>
                   </div>
                 )}
-                
-                <button 
-                  type="submit" 
+
+                <button
+                  type="submit"
                   className="contact-submit-btn"
                   disabled={status.submitting}
                 >
@@ -192,7 +192,7 @@ function Contact() {
             <div className="contact-info-wrapper">
               <h2 className="contact-info-title">Contact Information</h2>
               <p className="contact-info-subtitle">Reach out to us through any of these channels</p>
-              
+
               <div className="contact-info-list">
                 <div className="contact-info-item">
                   <div className="contact-info-icon"><MapPin size={24} strokeWidth={1.5} /></div>

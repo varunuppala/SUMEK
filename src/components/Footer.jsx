@@ -8,12 +8,11 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-section company-info">
             <div className="footer-logo">
-              <div className="footer-logo-icon">S&U</div>
-              <span className="footer-company-name">MEK Engineers</span>
+              <img src="/FullLogoFinal.png" alt="S&U MEK Engineers" className="footer-logo-img" />
             </div>
             <p className="footer-description">
-              A trusted partner in aerospace and defense manufacturing offering 
-              end-to-end solutions from precision machining to advanced carbon 
+              A trusted partner in aerospace and defense manufacturing offering
+              end-to-end solutions from precision machining to advanced carbon
               composites production. Fully designed, developed, and made in India.
             </p>
             <div className="footer-social">
@@ -25,7 +24,7 @@ function Footer() {
               </a>
             </div>
           </div>
-          
+
           <div className="footer-section">
             <h4>Quick Links</h4>
             <ul>
@@ -36,7 +35,7 @@ function Footer() {
               <li><a href="#news">News & Updates</a></li>
             </ul>
           </div>
-          
+
           <div className="footer-section">
             <h4>Get In Touch</h4>
             <div className="contact-item">
@@ -64,7 +63,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        
+
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <p>&copy; 2024 S & U MEK Engineers Pvt Ltd. All rights reserved.</p>
