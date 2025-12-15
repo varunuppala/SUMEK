@@ -1,40 +1,14 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 function HeroSection() {
-  const videos = ['/Video-1.mp4', '/Video-2.mp4', '/Video-3.mp4'];
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
   const videoRef = useRef(null);
 
   useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const handleVideoEnd = () => {
-      setIsTransitioning(true);
-
-      // Wait for fade out, then switch video
-      setTimeout(() => {
-        setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
-        setIsTransitioning(false);
-      }, 500);
-    };
-
-    video.addEventListener('ended', handleVideoEnd);
-
-    return () => {
-      video.removeEventListener('ended', handleVideoEnd);
-    };
-  }, [videos.length]);
-
-  // Reset and play video when index changes
-  useEffect(() => {
-    const video = videoRef.current;
-    if (video) {
-      video.load();
-      video.play().catch(err => console.log('Video autoplay prevented:', err));
+    // Ensure video plays on mount
+    if (videoRef.current) {
+      videoRef.current.play().catch(err => console.log('Video autoplay prevented:', err));
     }
-  }, [currentVideoIndex]);
+  }, []);
 
   return (
     <section className="hero-section" style={{ position: 'relative', height: '80vh', minHeight: '500px' }}>
@@ -42,9 +16,10 @@ function HeroSection() {
       <div className="hero-video-container" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }}>
         <video
           ref={videoRef}
-          className={`hero-video ${isTransitioning ? 'fading' : ''}`}
-          src={videos[currentVideoIndex]}
+          className="hero-video"
+          src="/HeroVideo.mp4"
           muted
+          loop
           playsInline
           autoPlay
           style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.5 }}
@@ -73,4 +48,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection; 
+export default HeroSection;
